@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import "normalize";
+@import 'variables';
+@import 'mixins';
+@import 'type';
+
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: $color-white;
+  height: 100%;
+  width: 100%;
+
+  font-family: $font-reg;
+  @include font-size(16);
+  text-align: left;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  @include flexbox;
+  flex-flow: row wrap;
+  .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.wrapper > * {
+  flex: 1 100%;
+}
+
+.masthead {
+  padding: $space-2 0;
+}
+
+.masthead-logo {
+  @include font-size(18);
+  font-weight: 700;
+  display: block;
+  margin: 9px 0;
+}
+
+.nav-list {
+  @include flexbox;
+  @include flex-wrap(nowrap);
+  list-style: none;
+  margin: 0 0 $space-2;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-list-item {
+  @include flexbox;
+  align-self: flex-start;
+  margin: 0 $space-2 0 0;
+  padding: 1rem 0;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-list-link {
+  @include flexbox;
+  width: 100%;
+} 
+
+.nav-trunk {
+  background: $color-black;
+  width: 100%;
+  &.fixed {
+    .nav-list {
+      // @include flex-wrap(nowrap);
+      flex: 2 100%;
+    }
+    .nav-list-item {
+      display: none;
+    }
+    .nav-list-item.active {
+      @include flexbox;
+    }
+    .nav-list-desc {
+      display: none;
+    }
+  }
+}
+
+.nav-crumbs {
+  .nav-list-item {
+    margin-right: $space-1;
+    width: auto;
+    &:after {
+      content: "/";
+      padding-left: $space-1;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+.content {
+  padding: $space-2 0;
+}
+
+.content-item {
+  margin: 0 0 $space-3;
+}
+.content-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content-list-item {
+  margin: 0 0 $space-3 0;
+}
+
+.content-list, .content-trunk, .content-branch, .content-twig, .content-abstract {
+  margin: 0 0 $space-3;
+}
+
+.content-tree, .content-trunk, .content-branch, .content-twig {
+  position: relative;
+  @media (min-width: $mq-medium) {
+    &:after {
+      background: $color-grey-l4;
+      content: "";
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 60%;
+      z-index: -1;
+    }
+  }
+}
+
+.skill-box {
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+.skill-key {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.skill-key-x {
+  @include font-size(10);
+  @include flexbox;
+  padding-left: $space-2;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  .skill-key-item {
+    text-align: center;
+    width: 20%;
+  }
+}
+.skill-key-y {
+  @include font-size(10);
+  @include flexbox;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding-bottom: $space-2;
+}
+.skill-list {
+  height: 100%;
+  width: 100%;
+  padding-left: $space-2;
+  padding-bottom: $space-2;
+  position: absolute;
+  @include font-size(10);
+  @include flexbox;
+  align-items: flex-end;
+}
+.skill-list-item {
+  height: 50%;
+  width: 20%;
+  position: relative;
+  &:before {
+    background: $color-grey;
+    content: "";
+    height: 100%;
+    width: 20px;
+    @include horizontal-center;
+  }
+}
+
+#t-skills {
+  .skill-1, .skill-5 {
+    height: 65%;
+  }
+  .skill-2, .skill-4 {
+    height: 85%;
+  }
+  .skill-3 {
+    height: 100%;
+  }
+}
+#i-skills {
+  .skill-1, .skill-5 {
+    height: 0%;
+  }
+  .skill-2, .skill-4 {
+    height: 0%;
+  }
+  .skill-3 {
+    height: 100%;
+  }
+}
+#dash-skills {
+  .skill-1, .skill-5 {
+    height: 50%;
+  }
+  .skill-2, .skill-4 {
+    height: 50%;
+  }
+  .skill-3 {
+    height: 50%;
+  }
+}
+
+.twig-links {
+  height: 80vh;
+  overflow: scroll;
+}
