@@ -68,7 +68,7 @@ body {
 .nav-list-link {
   @include flexbox;
   width: 100%;
-} 
+}
 
 .nav-trunk {
   background: $color-black;
@@ -229,6 +229,118 @@ body {
 }
 
 .twig-links {
-  height: 80vh;
-  overflow: scroll;
+  @media (min-width: $mq-large) {
+    left: 0;
+    height: 80vh;
+    padding-left: $space-6;
+    position: fixed;
+    overflow: scroll;
+    width: 100%;
+    &:after {
+      background: linear-gradient(90deg, rgba(247,247,247,0), rgba(247,247,247,1));
+      content: '';
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100px;
+      z-index: 1000;
+    }
+  }
+  @media (min-width: $mq-xl) {
+    padding-left: $space-6 + 20;
+  }
+}
+.modal-backdrop {
+  background: $color-grey-l4;
+  &.show {
+    opacity: 1;
+  }
+}
+.modal-content {
+  background: $color-grey-l4;
+  border: 0;
+}
+.modal-dialog {
+  @media (min-width: $mq-small) {
+    max-width: 80%;
+  }
+  @media (min-width: $mq-large) {
+    max-width: 95%;
+  }
+}
+.modal-header {
+  @media (min-width: $mq-large) {
+    border-bottom: 0;
+    padding-top: $space-3;
+  }
+}
+.modal-title {
+  @media (min-width: $mq-large) {
+    line-height: 1.2;
+  }
+}
+button.modal-close {
+    @include font-size(48);
+    font-weight: 300;
+    line-height: .5;
+    outline: 0;
+    padding: $space-1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.list-ordered {
+  counter-reset: item;
+  list-style: none;
+  @include flexbox;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $mq-large) {
+    align-content: flex-start;
+    flex-direction: row;
+  }
+}
+.list-ordered-item {
+  background: $color-white;
+  counter-increment: item;
+  padding: $space-3;
+  margin-bottom: $space-3;
+  min-width: 100%;
+  position: relative;
+  @media (min-width: $mq-large) {
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.05);
+    margin-bottom: 0;
+    margin-right: $space-3;
+    min-width: 400px;
+  }
+  &:before {
+    content: counter(item, decimal-leading-zero);
+    color: $color-black;
+    @include font-size(16);
+    display: block;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: $space-2;
+    padding-right: 5px;
+    position: relative;
+    width: 100%;
+  }
+}
+.list-ordered-title {
+
+}
+.list-ordered-link {
+  @include font-size(24);
+  display: block;
+  @media (min-width: $mq-large) {
+    bottom: $space-2;
+    position: absolute;
+  }
+}
+.list-ordered-desc {
+  color: $color-grey;
+  padding-bottom: $space-2;
 }
