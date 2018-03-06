@@ -8,8 +8,9 @@ var js = js || {},
 js.main = {
   init: function () {
     this.linksExternal();
+    this.horiVertScroll();
     // this.fbPixel();
-    // this.waypointsMasthead();
+    // this.waypointsTwigs();
   },
 
   // Keep this shit in ABC Order
@@ -21,6 +22,34 @@ js.main = {
         currency: 'USD'
       });
     });
+  },
+  horiVertScroll: function () {
+    var scroller = {};
+    scroller.e = document.getElementById("twig");
+
+    if (scroller.e.addEventListener) {
+        scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
+        scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+    } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
+
+    function MouseWheelHandler(e) {
+
+        // cross-browser wheel delta
+        var e = window.event || e;
+        var delta = - 50 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+
+        var pst = $('#twig').scrollLeft() + delta;
+
+        if (pst < 0) {
+            pst = 0;
+        } else if (pst > $('.img_holder').width()) {
+            pst = $('.img_holder').width();
+        }
+
+        $('#twig').scrollLeft(pst);
+
+        return false;
+    }
   },
   linksExternal: function () {
     $.expr[':'].external = function (a) {
@@ -47,16 +76,16 @@ js.main = {
       window.open($(this).attr('href')); return false;
     });
   },
-  waypointsMasthead: function (){
+  waypointsTwigs: function (){
     var waypoint = new Waypoint({
-      element: document.getElementById('about'),
+      element: document.getElementById('twig'),
       handler: function(direction) {
-        var masthead = document.getElementById("masthead");
-        if (direction==='down'){
-          masthead.classList.add('scrolled');
+        var abs = document.getElementById("twig_abstract");
+        if (direction==='left'){
+          abs.classList.add('scrolled');
         }
-        else if (direction==='up'){
-          masthead.classList.remove('scrolled');
+        else if (direction==='right'){
+          abs.classList.remove('scrolled');
         }
       }
     });

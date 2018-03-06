@@ -20,108 +20,276 @@ title: Graphic Design
       ul.content-list
         li.content-list-item
           h3
-            a href="#" data-toggle="modal" data-target="#exampleModal" Typography
+            a.content-list-link href="#" data-toggle="modal" data-target="#modal_typography" Typography
           p.content-list-desc
             | Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed
-          #exampleModal.modal.fade aria-hidden="true" aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1"
+          #modal_typography.modal.fade aria-hidden="true" aria-labelledby="model_label" role="dialog" tabindex="-1" data-backdrop="static" data-keyboard="false"
             .modal-dialog.modal-dialog-centered role="document"
               .modal-content
                 button.close.modal-close aria-label="Close" data-dismiss="modal" type="button"
                   span aria-hidden="true"  &times;
-                .container-fluid
+                .modal-content-container.container-fluid
                   .row
                     .col-12.col-xl-3
-                      .modal-header
-                        h1#exampleModalLabel.modal-title Learn<br / >Typography
-                      .modal-body
-                        .row
-                          .col-12
-                            p
-                              | Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.
-                            p
-                              | The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), and adjusting the space between pairs of letters (kerning[1]).
+                      .twig-abstract
+                        .modal-header
+                          h1#model_label.modal-title Learn<br / >Typography
+                        .modal-body
+                          .row
+                            .col-12
+                              p
+                                | Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.
+                              p
+                                | The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing (leading), and letter-spacing (tracking), and adjusting the space between pairs of letters (kerning[1]).
                     .col-12.col-xl-9
                       .modal-body
-                        .twig-links
+                        #twig.twig-links
                           ol.list-ordered
                             li.list-ordered-item
                               h2.list-ordered-title
                                 | Typography Cheatsheet
                               p.list-ordered-desc
                                 | A comprehensive guide to using proper typographic characters, including correct grammatical usage.
-                              a.list-ordered-link href="https://www.typewolf.com/cheatsheet" Visit Article
+                              a.list-ordered-link href="https://www.typewolf.com/cheatsheet" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
                             li.list-ordered-item
                               h2.list-ordered-title
                                 | Type Scale
                               p.list-ordered-desc
                                 | A type tool that helps build type scales and output to CSS.
-                              a.list-ordered-link href="http://type-scale.com/" Visit App
+                              a.list-ordered-link href="http://type-scale.com/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item app
                             li.list-ordered-item
                               h2.list-ordered-title
                                 | Google Fonts
                               p.list-ordered-desc
                                 | Install webfonts on your website using Google's hosted fonts.
-                              a.list-ordered-link href="https://fonts.google.com/" Visit App
+                              a.list-ordered-link href="https://fonts.google.com/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item app
                             li.list-ordered-item
                               h2.list-ordered-title
                                 | Practical Typograhy
                               p.list-ordered-desc
                                 | Learn everything about typography.
-                              a.list-ordered-link href="https://practicaltypography.com/" Read Book
+                              a.list-ordered-link href="https://practicaltypography.com/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item book
                             li.list-ordered-item
                               h2.list-ordered-title
                                 | Web typography
                               p.list-ordered-desc
                                 | Web typography on Wikipedia.
-                              a.list-ordered-link href="https://en.wikipedia.org/wiki/Web_typography?oldformat=true" Read Wiki
+                              a.list-ordered-link href="https://en.wikipedia.org/wiki/Web_typography?oldformat=true" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item wiki
                             li.list-ordered-item
                               h2.list-ordered-title
-                                | Learn How to Set Kerning
+                                | Typography Resources
                               p.list-ordered-desc
-                                | Learn how to kern like a pro with these tips and tricks to make your type look way better.
-                              a.list-ordered-link href="#" Visit Article
-                            li.list-ordered-item
-                              h2.list-ordered-title
-                                | Learn How to Set Kerning
-                              p.list-ordered-desc
-                                | Learn how to kern like a pro with these tips and tricks to make your type look way better.
-                              a.list-ordered-link href="#" Visit Article
-                            li.list-ordered-item
-                              h2.list-ordered-title
-                                | Learn How to Set Kerning
-                              p.list-ordered-desc
-                                | Learn how to kern like a pro with these tips and tricks to make your type look way better.
-                              a.list-ordered-link href="#" Visit Article
-                            li.list-ordered-item
-                              h2.list-ordered-title
-                                | Learn How to Set Kerning
-                              p.list-ordered-desc
-                                | Learn how to kern like a pro with these tips and tricks to make your type look way better.
-                              a.list-ordered-link href="#" Visit Article
-                            li.list-ordered-item
-                              h2.list-ordered-title
-                                | Learn How to Set Kerning
-                              p.list-ordered-desc
-                                | Learn how to kern like a pro with these tips and tricks to make your type look way better.
-                              a.list-ordered-link href="#" Visit Article
+                                | A curated list of typography articles and resources, categorized.
+                              a.list-ordered-link href="https://www.whatfontis.com/typography-resources/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item directory
                     .col-12
                       .modal-footer
                         | Submit Links
         li.content-list-item
           h3
-            a.content-list-link href="#" Color Theory
+            a.content-list-link href="#colortheory" data-toggle="modal" data-target="#modal_colortheory" Color Theory
           p.content-list-desc
             | Color theory or colour theory is a body of practical guidance to color mixing and the visual effects of a specific color combination.
+          #modal_colortheory.modal.fade aria-hidden="true" aria-labelledby="model_label" role="dialog" tabindex="-1" data-backdrop="static" data-keyboard="false"
+            .modal-dialog.modal-dialog-centered role="document"
+              .modal-content
+                button.close.modal-close aria-label="Close" data-dismiss="modal" type="button"
+                  span aria-hidden="true"  &times;
+                .modal-content-container.container-fluid
+                  .row
+                    .col-12.col-xl-3
+                      .modal-header
+                        h1#model_label.modal-title Learn<br / >Color Theory
+                      .modal-body
+                        .row
+                          .col-12
+                            p
+                              | Color theory or colour theory is a body of practical guidance to color mixing and the visual effects of a specific color combination. - <a href="https://www.wikiwand.com/en/Color_theory">Wikipedia</a>
+                    .col-12.col-xl-9
+                      .modal-body
+                        .twig-links
+                          ol.list-ordered
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Color Theory for Designers, Part 1: The Meaning of Color
+                              p.list-ordered-desc
+                                | Smashing Magazine's take on Color Theory for Designers.
+                              a.list-ordered-link href="https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Color Theory: Brief Guide For Designers.
+                              p.list-ordered-desc
+                                | The basics of color theory and color combination which can be effectively applied in your design creating process.
+                              a.list-ordered-link href="https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Coolors
+                              p.list-ordered-desc
+                                | The super fast color schemes generator!
+                              a.list-ordered-link href="https://coolors.co/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item app
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | COLOURlovers
+                              p.list-ordered-desc
+                                | COLOURlovers is a community where people create and share colors, palettes and patterns, and latest trends.
+                              a.list-ordered-link href="http://www.colourlovers.com/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item social
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | ColorZilla
+                              p.list-ordered-desc
+                                | Browser based color dropper.
+                              a.list-ordered-link href="http://www.colorzilla.com/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item app
+                    .col-12
+                      .modal-footer
+                        | Submit Links
         li.content-list-item
           h3
-            a.content-list-link href="#" Page Layout
+            a.content-list-link href="#pagelayout" data-toggle="modal" data-target="#modal_pagelayout" Page Layout
           p.content-list-desc
             | Page layout is the part of graphic design that deals in the arrangement of visual elements on a page.
+          #modal_pagelayout.modal.fade aria-hidden="true" aria-labelledby="model_label" role="dialog" tabindex="-1"
+            .modal-dialog.modal-dialog-centered role="document"
+              .modal-content
+                button.close.modal-close aria-label="Close" data-dismiss="modal" type="button"
+                  span aria-hidden="true"  &times;
+                .modal-content-container.container-fluid
+                  .row
+                    .col-12.col-xl-3
+                      .modal-header
+                        h1#model_label.modal-title Learn<br / >Page Layout
+                      .modal-body
+                        .row
+                          .col-12
+                            p
+                              | Page layout is the part of graphic design that deals in the arrangement of visual elements on a page. - <a href="https://www.wikiwand.com/en/Page_layout">Wikipedia</a>
+                    .col-12.col-xl-9
+                      .modal-body
+                        .twig-links
+                          ol.list-ordered
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Responsive web design
+                              p.list-ordered-desc
+                                | Learn about Responsive Web Design via Wikipedia.
+                              a.list-ordered-link href="https://www.wikiwand.com/en/Responsive_web_design" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item wiki
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Responsive Web Design Is...
+                              p.list-ordered-desc
+                                | We help take the complexity out of responsive design with details on Design, Development and Strategy.
+                              a.list-ordered-link href="https://responsivedesign.is/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | The Trick To Designing a Great Layout
+                              p.list-ordered-desc
+                                | Web Designer Depot explains how to design a great layout
+                              a.list-ordered-link href="https://www.webdesignerdepot.com/2013/06/the-trick-to-designing-a-great-layout/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | 10 Rules of Composition All Designers Live By
+                              p.list-ordered-desc
+                                | You could have the most beautiful graphic elements in the world, but if your composition isn’t up to scratch, all of that goes out the window.
+                              a.list-ordered-link href="https://www.canva.com/learn/visual-design-composition/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item app
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | 10 Basic Elements of Design
+                              p.list-ordered-desc
+                                | Creating beautiful design is about more than inspiration or a great idea, it’s about understanding the fundamentals of the subject.
+                              a.list-ordered-link href="https://creativemarket.com/blog/10-basic-elements-of-design" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                    .col-12
+                      .modal-footer
+                        | Submit Links
         li.content-list-item
           h3
-            a.content-list-link href="#" Illustration
+            a.content-list-link href="#illustration" data-toggle="modal" data-target="#modal_illustration" Illustration
           p.content-list-desc
             | An illustration is a decoration, interpretation or visual explanation of a text, concept or process,[1] designed for integration in published media, such as posters, flyers, magazines, books, teaching materials, animations, video games and films.
+          #modal_illustration.modal.fade aria-hidden="true" aria-labelledby="model_label" role="dialog" tabindex="-1"
+            .modal-dialog.modal-dialog-centered role="document"
+              .modal-content
+                button.close.modal-close aria-label="Close" data-dismiss="modal" type="button"
+                  span aria-hidden="true"  &times;
+                .modal-content-container.container-fluid
+                  .row
+                    .col-12.col-xl-3
+                      .modal-header
+                        h1#model_label.modal-title Learn<br / >Illustration
+                      .modal-body
+                        .row
+                          .col-12
+                            p
+                              | An illustration is a decoration, interpretation or visual explanation of a text, concept or process,[1] designed for integration in published media, such as posters, flyers, magazines, books, teaching materials, animations, video games and films. - <a href="https://www.wikiwand.com/en/Illustration">Wikipedia</a>
+                    .col-12.col-xl-9
+                      .modal-body
+                        .twig-links
+                          ol.list-ordered
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Dear Ueno: How do I learn illustration?
+                              p.list-ordered-desc
+                                | How does one learn to make illustrations?
+                              a.list-ordered-link href="https://loremipsum.ueno.co/dear-ueno-how-do-i-learn-illustration-34b179a71385" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Illustration in Product Design: Calculated, not cute.
+                              p.list-ordered-desc
+                                | Have you noticed the “trend” of using illustration in Product Design?
+                              a.list-ordered-link href="https://ux.shopify.com/illustration-in-product-design-calculated-not-cute-19da0708ea54" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Why We Should Embrace Illustrations in Product Design
+                              p.list-ordered-desc
+                                | Illustrations should be embraced in product design because they can make a large difference.
+                              a.list-ordered-link href="https://blog.marvelapp.com/embrace-illustrations-product-design/" Visit Article
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Skillshare: Illustration
+                              p.list-ordered-desc
+                                | Learn Illustration from watching Skillshare Tutorials
+                              a.list-ordered-link href="https://www.skillshare.com/browse/illustration" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item learning
+
+                    .col-12
+                      .modal-footer
+                        | Submit Links
         li.content-list-item
           h3
             a.content-list-link href="#" Icon Design

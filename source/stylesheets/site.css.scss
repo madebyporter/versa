@@ -21,6 +21,9 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @media (min-width: $mq-large) {
+    padding: $space-4 0 0 0;
+  }
 }
 
 .wrapper {
@@ -37,6 +40,12 @@ body {
 
 .masthead {
   padding: $space-2 0;
+  @media (min-width: $mq-large) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
 }
 
 .masthead-logo {
@@ -137,10 +146,13 @@ body {
       right: 0;
       width: 60%;
       z-index: -1;
+      // filter: blur(2px);
     }
   }
 }
-
+.content-abstract {
+  // text-shadow: 30px 30px 60px rgba(0,0,0,0.2);
+}
 .skill-box {
   height: 150px;
   width: 100%;
@@ -246,6 +258,9 @@ body {
       width: 100px;
       z-index: 1000;
     }
+    .list-ordered {
+
+    }
   }
   @media (min-width: $mq-xl) {
     padding-left: $space-6 + 20;
@@ -261,7 +276,14 @@ body {
   background: $color-grey-l4;
   border: 0;
 }
+.modal-content-container {
+  @media (min-width: $mq-large) {
+    @include vertical-center;
+    min-height: 420px;
+  }
+}
 .modal-dialog {
+  background: $color-grey-l4;
   @media (min-width: $mq-small) {
     max-width: 80%;
   }
@@ -280,6 +302,15 @@ body {
     line-height: 1.2;
   }
 }
+.modal-footer {
+  @media (min-width: $mq-large) {
+    bottom: 20px;
+    position: fixed;
+    right: 20px;
+    width: 100%;
+  }
+}
+
 button.modal-close {
     @include font-size(48);
     font-weight: 300;
@@ -315,6 +346,7 @@ button.modal-close {
     margin-bottom: 0;
     margin-right: $space-3;
     min-width: 400px;
+    max-width: 400px;
   }
   &:before {
     content: counter(item, decimal-leading-zero);
@@ -343,4 +375,20 @@ button.modal-close {
 .list-ordered-desc {
   color: $color-grey;
   padding-bottom: $space-2;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $mq-large) {
+    position: absolute;
+    bottom: $space-2;
+    right: $space-3;
+  }
+}
+
+.tags-item {
+  color: $color-grey;
+  font-style: italic;
 }

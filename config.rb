@@ -27,6 +27,8 @@ Slim::Engine.set_default_options :pretty => true
 #  which_fake_page: 'Rendering a fake page with a local variable' }
 
 activate :directory_indexes
+set :relative_links, true
+activate :relative_assets
 set :debug_assets, true
 
 # Sounds Layout
@@ -66,9 +68,6 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
-
-  set :relative_links, true
-  activate :relative_assets
   set :strip_index_file, true
 
   # ignore '*.php'
