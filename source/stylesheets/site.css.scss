@@ -127,13 +127,39 @@ body {
 }
 
 .content-list-item {
+  border-bottom: 1px solid $color-grey-l3;
   margin: 0 0 $space-3 0;
+  padding: 0 0 $space-2 0;
 }
 
 .content-list, .content-trunk, .content-branch, .content-twig, .content-abstract {
   margin: 0 0 $space-3;
 }
-
+.content-list-new {
+  position: relative;
+  &:before {
+    color: $color-grey-d2;
+    content: "New";
+    @include font-size(12);
+    font-style: oblique;
+    position: absolute;
+    top: -13px;
+    left: 1px;
+  }
+}
+.content-list-soon {
+  color: $color-grey-l3;
+  position: relative;
+  &:before {
+    color: $color-grey-d2;
+    content: "Coming Soon";
+    @include font-size(12);
+    font-style: oblique;
+    position: absolute;
+    top: -13px;
+    left: 1px;
+  }
+}
 .content-tree, .content-trunk, .content-branch, .content-twig {
   position: relative;
   @media (min-width: $mq-medium) {
@@ -244,7 +270,7 @@ body {
   @media (min-width: $mq-large) {
     left: 0;
     height: 80vh;
-    padding-left: $space-6;
+    padding-left: $space-6 + 10;
     position: fixed;
     overflow: scroll;
     width: 100%;

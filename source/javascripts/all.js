@@ -24,32 +24,36 @@ js.main = {
     });
   },
   horiVertScroll: function () {
-    var scroller = {};
-    scroller.e = document.getElementById("twig");
+    $.fn.hScroll = function( options ){
+       function scroll( obj, e )
+       {
+         var evt = e.originalEvent;
+         var direction = evt.detail ? evt.detail * (-80) : evt.wheelDelta;
 
-    if (scroller.e.addEventListener) {
-        scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
-        scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-    } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
+         if( direction > 0)
+         {
+            direction =  $(obj).scrollLeft() - 80;
+         }
+         else
+         {
+            direction = $(obj).scrollLeft() + 80;
+         }
 
-    function MouseWheelHandler(e) {
+         $(obj).scrollLeft( direction );
 
-        // cross-browser wheel delta
-        var e = window.event || e;
-        var delta = - 50 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+         e.preventDefault();
+       }
 
-        var pst = $('#twig').scrollLeft() + delta;
+       $(this).width( $(this).find('div').width() );
 
-        if (pst < 0) {
-            pst = 0;
-        } else if (pst > $('.img_holder').width()) {
-            pst = $('.img_holder').width();
-        }
-
-        $('#twig').scrollLeft(pst);
-
-        return false;
-    }
+       $(this).bind('DOMMouseScroll mousewheel', function( e )
+       {
+        scroll( this, e );
+       });
+    };
+    $(document).ready(function(){
+         $('.twig-links').hScroll();
+    });
   },
   linksExternal: function () {
     $.expr[':'].external = function (a) {
