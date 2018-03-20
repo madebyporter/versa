@@ -436,9 +436,95 @@ title: Graphic Design
                         | Submit Links
         li.content-list-item
           h3
-            a.content-list-link href="#" Adobe Illustrator
+            a.content-list-link href="#adobeillustrator" data-toggle="modal" data-target="#modal_adobeillustrator" Adobe Illustrator
           p.content-list-desc
             | Adobe Illustrator is a vector graphics editor developed and marketed by Adobe Systems.
+          #modal_adobeillustrator.modal.fade aria-hidden="true" aria-labelledby="model_label" role="dialog" tabindex="-1" data-backdrop="static" data-keyboard="false"
+            .modal-dialog.modal-dialog-centered role="document"
+              .modal-content
+                button.close.modal-close aria-label="Close" data-dismiss="modal" type="button"
+                  span aria-hidden="true"  &times;
+                .modal-content-container.container-fluid
+                  .row
+                    .col-12.col-xl-3
+                      .modal-header
+                        h1#model_label.modal-title Learn<br / >Adobe Illustrator
+                      .modal-body
+                        .row
+                          .col-12
+                            p
+                              | Illustrator is a vector based graphic design program that allows you to create icons, illustrations, logos, and more.
+                    .col-12.col-xl-9
+                      .modal-body
+                        #twig.twig-links
+                          ol.list-ordered
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Envato Tuts+ How-to Illustrator Tutorials
+                              p.list-ordered-desc
+                                | Learn some Illustrator tips from Tutsplus.
+                              a.list-ordered-link href="https://design.tutsplus.com/categories/adobe-illustrator" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item tutorials
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Illustrator CC Shortcuts: Mac
+                              p.list-ordered-desc
+                                | Illustrator shortcuts for Mac
+                              a.list-ordered-link href="https://www.nobledesktop.com/shortcuts/illustratorcc/mac" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item tutorials
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Illustrator CC Shortcuts: PC
+                              p.list-ordered-desc
+                                | Illustrator shortcuts for PC
+                              a.list-ordered-link href="https://www.nobledesktop.com/shortcuts/illustratorcc/pc" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item tutorials
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | 10 Essential Tips & Tools All Adobe Illustrator Beginners Should Learn
+                              p.list-ordered-desc
+                                | Here's 10 essential tips and tools all Adobe Illustrator beginners should learn, and link you to a tutorial or two which will help you learn how to use them.
+                              a.list-ordered-link href="https://design.tutsplus.com/articles/10-essential-tips-tools-all-adobe-illustrator-beginners-should-learn--cms-23163" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | The Complete Guide to Adobe Illustrator Tools Pt. 1
+                              p.list-ordered-desc
+                                | An overview of EVERY SINGLE Adobe Illustrator tool.
+                              a.list-ordered-link href="http://mariahalthoff.com/blogposts/adobe-illustrator-tools-guide-pt1" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Adobe Illustrator CC for Web Designers
+                              p.list-ordered-desc
+                                | A few tools and tips for Web Designers using Adobe Illustrator CC
+                              a.list-ordered-link href="https://create.adobe.com/2014/11/12/adobe_illustrator_cc_for_web_designers.html" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | UI & Web Design using Adobe Illustrator CC
+                              p.list-ordered-desc
+                                | Work as a UI designer building web design & app designs in Illustrator.
+                              a.list-ordered-link href="https://www.udemy.com/ui-web-design-using-adobe-illustrator-2017/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item tutorial
+                            li.list-ordered-item
+                              h2.list-ordered-title
+                                | Prepping Illustrator’s Settings for App Design
+                              p.list-ordered-desc
+                                | Here are a few tips for using a native vector tool to design application UI.
+                              a.list-ordered-link href="https://spin.atomicobject.com/2013/10/14/illustrator-app-design/" Visit
+                              ul.tags.list-ordered-tags
+                                li.tags-item article
+                    .col-12
+                      .modal-footer
+                        == link_to 'Submit Link', '../graphic-design-submit', :class => "content-list-link"
         li.content-list-item
           h3
             a.content-list-link href="#" Affinity Designer
