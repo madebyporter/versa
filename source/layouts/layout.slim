@@ -24,14 +24,7 @@ html
             .col-2.col-lg-2
               a.masthead-logo href="/" Logo
             .col-10.col-lg-10
-              nav.nav.nav-crumbs
-                ul.nav-list
-                  = if current_page.parent
-                    li.nav-list-item
-                      == link_to current_page.parent.data.title, current_page.parent, :class => "nav-list-link"
-                  li.nav-list-item
-                    span.nav-list-text
-                      = current_page.data.title
+              = link_to "Suggest Link", "/suggest-link"
       section.content
         .container-fluid
           .row
