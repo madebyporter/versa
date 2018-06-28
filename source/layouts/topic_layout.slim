@@ -1,6 +1,7 @@
 == wrap_layout :layout do
   h2 = current_article.title
   p = current_article.data.abstract
+  = link_to "Suggest Link", "/suggest-link"
   ul
     - current_article.tags.each do |tag|
       li
