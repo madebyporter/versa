@@ -1,87 +1,14 @@
 ---
-title: Versa 
+title: Versa
 ---
 .row
   .col-lg-6
-    .content-abstract
-      .row
-        .col-10
-          .content-item
-            p
-              | Most fields have many disciplines and roles. Most people can fill one to two roles. Some people can handle many discipline. Only a few can master multiple fields.
-
-          .content-item
-            .row
-              .col-6
-                #t-skills.skill-box
-                  .skill-key
-                    .skill-key-y
-                      .skill-key-item A
-                      .skill-key-item B
-                      .skill-key-item C
-                      .skill-key-item D
-                      .skill-key-item F
-                    .skill-key-x
-                      .skill-key-item 1
-                      .skill-key-item 2
-                      .skill-key-item 3
-                      .skill-key-item 4
-                      .skill-key-item 5
-                  .skill-list
-                    .skill-1.skill-list-item
-                    .skill-2.skill-list-item
-                    .skill-3.skill-list-item
-                    .skill-4.skill-list-item
-                    .skill-5.skill-list-item
-              .col-6
-                #i-skills.skill-box
-                  .skill-key
-                    .skill-key-y
-                      .skill-key-item A
-                      .skill-key-item B
-                      .skill-key-item C
-                      .skill-key-item D
-                      .skill-key-item F
-                    .skill-key-x
-                      .skill-key-item 1
-                      .skill-key-item 2
-                      .skill-key-item 3
-                      .skill-key-item 4
-                      .skill-key-item 5
-                  .skill-list
-                    .skill-1.skill-list-item
-                    .skill-2.skill-list-item
-                    .skill-3.skill-list-item
-                    .skill-4.skill-list-item
-                    .skill-5.skill-list-item
-              .col-6
-                #dash-skills.skill-box
-                  .skill-key
-                    .skill-key-y
-                      .skill-key-item A
-                      .skill-key-item B
-                      .skill-key-item C
-                      .skill-key-item D
-                      .skill-key-item F
-                    .skill-key-x
-                      .skill-key-item 1
-                      .skill-key-item 2
-                      .skill-key-item 3
-                      .skill-key-item 4
-                      .skill-key-item 5
-                  .skill-list
-                    .skill-1.skill-list-item
-                    .skill-2.skill-list-item
-                    .skill-3.skill-list-item
-                    .skill-4.skill-list-item
-                    .skill-5.skill-list-item
-            p
-              | To learn more about a field, choose from one on the right to get started.
-  .col-lg-6
-    .content-tree
-      ul.content-list
-        li.content-list-item
-          h2
-            == link_to 'Digital Product', 'digital-product/', :class => "nav-list-link"
-          p.content-list-desc
-            | Digital Product is the school of creating solutions for the web, desktop or mobile space.
+    ul
+      - blog.articles[0...5].each do |topic|
+        li
+          h2 = topic.title
+          ul
+            - topic.tags.each do |tag|
+              li
+                | #{tag}
+          = link_to "View", topic.url

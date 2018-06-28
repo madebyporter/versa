@@ -1,0 +1,15 @@
+== wrap_layout :layout do
+  h2 = current_article.title
+  p = current_article.data.abstract
+  ul
+    - current_article.tags.each do |tag|
+      li
+        | #{tag}
+  p = current_article.body
+  ol
+    - current_article.data.links.each do |link|
+      li
+        p = link.name
+        p = link.desc
+        p = link.type
+        p = link_to "Link", link.url
