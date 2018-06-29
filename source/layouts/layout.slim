@@ -21,10 +21,15 @@ html
       header.masthead.block
         .container-fluid
           .row
-            .col-12.col-sm-1
+            .col-4.col-sm-2
               a.masthead-logo href="/" Logo
-            .col-sm-10
-            .col-12.col-sm-1
+            .col-4.col-sm-8
+              nav.nav.masthead-nav
+                = link_to "Twigs", "/twigs", :class => "nav-link"
+                = link_to "Branches", "/branches", :class => "nav-link"
+                = link_to "Trunks", "/trunks", :class => "nav-link"
+
+            .col-4.col-sm-2
               .menu-trigger.masthead-menu-trigger
                 i class="fas fa-bars"
 

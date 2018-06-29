@@ -73,27 +73,73 @@ body {
 }
 
 .masthead-logo {
-  background: url('../images/versa-logo.svg') no-repeat;
+  background: url('../images/versa-logo.svg') no-repeat left center;
+  background-size: 29px 20px;
   @include text-hide;
   @include font-size(18);
   font-weight: 700;
   display: block;
-  height: 20px;
-  width: 29px;
-  margin: $space-2 auto;
+  height: 60px;
+  width: 100%;
+
   @media (min-width: $mq-small) {
-    margin: $space-3 0;
+    height: 100px;
   }
 }
 .masthead-menu-trigger {
+  cursor: pointer;
+  @include font-size(18);
+  @include flexbox;
+  justify-content: center;
+  flex-direction: column;
+  height: 60px;
+  line-height: 1;
+  text-align: right;
   @media (min-width: $mq-small) {
-    cursor: pointer;
-    @include font-size(18);
-    line-height: 1;
-    margin: $space-3 0;
-    text-align: right;
+    height: 100px;
   }
 }
+.nav {
+  @include flexbox;
+}
+.masthead-nav {
+  background: $color-black;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  .nav-link {
+    color: $color-white;
+    @include font-size(18);
+    font-weight: 700;
+    text-align: center;
+    width: 33.3%;
+  }
+  @media (min-width: $mq-medium) {
+    background: transparent;
+    bottom: auto;
+    height: 100px;
+    left: auto;
+    position: relative;
+    .nav-link {
+      border-left: 1px solid $color-grey-3;
+      color: $color-black;
+      @include font-size(18);
+      font-weight: 700;
+      height: 100%;
+      text-align: left;
+      width: 33.3%;
+
+      @include flexbox;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
 .container-wrap {
   margin: 0 auto;
   max-width: 95%;
