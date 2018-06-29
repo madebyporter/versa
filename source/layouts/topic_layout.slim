@@ -1,16 +1,25 @@
 == wrap_layout :layout do
-  h2 = current_article.title
-  p = current_article.data.abstract
-  = link_to "Suggest Link", "/suggest-link"
-  ul
-    - current_article.tags.each do |tag|
-      li
-        | #{tag}
-  p = current_article.body
-  ol
-    - current_article.data.links.each do |link|
-      li
-        p = link.name
-        p = link.desc
-        p = link.type
-        p = link_to "Link", link.url
+  .hero.block
+    .container-fluid
+      .row
+        .col-12
+          .row.align-items-end
+            .col-12.col-md-8.col-lg-6
+              h1.hero-header = current_article.title
+              p.hero-abstract = current_article.data.abstract
+              ul.tags.hero-tags.hero-tags-branches
+                - current_article.tags.each do |tag|
+                  li.tag
+                    | #{tag}
+            .col-12.col-sm-6.col-md-4.col-lg-2.offset-lg-4
+              = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
+  .content.block
+    ol.cards.row
+      - current_article.data.links.each do |link|
+        li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-3
+          .card.card-twig
+            h2.card-title = link.name
+            p.card-desc = link.desc
+            p.card-type = link.type
+            = link_to "Visit", link.url, :class => "btn btn-default card-cta"
+/ p = current_article.body

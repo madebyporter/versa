@@ -18,15 +18,15 @@ html
 
   body class="#{page_classes}"
     main.wrapper
-      header.masthead
-        .container-wrap
-          .container-fluid
-            .row
-              .col-12
-                a.masthead-logo href="/" Logo
-
-      section.content
+      header.masthead.block
         .container-fluid
           .row
-            .col-12.col-lg-8.offset-lg-2
-              == yield
+            .col-12.col-sm-1
+              a.masthead-logo href="/" Logo
+            .col-sm-10
+            .col-12.col-sm-1
+              .menu-trigger.masthead-menu-trigger
+                i class="fas fa-bars"
+
+
+      == yield

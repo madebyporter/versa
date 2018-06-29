@@ -8,7 +8,7 @@ var js = js || {},
 js.main = {
   init: function () {
     this.linksExternal();
-    this.horiVertScroll();
+    // this.horiVertScroll();
     // this.fbPixel();
     // this.waypointsTwigs();
   },

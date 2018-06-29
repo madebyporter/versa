@@ -24,6 +24,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.block {
+  padding-left: $space-2 !important;
+  padding-right: $space-2 !important;
+  @media (min-width: $mq-large) {
+    padding-left: $space-4 !important;
+    padding-right: $space-4 !important;
+  }
+}
 .btn {
   border-radius: 4px;
   font-weight: 700;
@@ -38,6 +46,23 @@ body {
 .btn-default {
   border: 1px solid $color-grey-3;
   color: $color-black;
+}
+
+.tags {
+  @include nolist;
+  @include flexbox;
+}
+.tag {
+  background: $color-grey-3;
+  border-radius: 4px;
+  @include font-size(12);
+  font-weight: 700;
+  margin: 0 $space-1 0 0;
+  text-transform: capitalize;
+  padding: 5px $space-2;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .masthead {
@@ -62,8 +87,11 @@ body {
 }
 .masthead-menu-trigger {
   @media (min-width: $mq-small) {
-    @include font-size(20);
+    cursor: pointer;
+    @include font-size(18);
+    line-height: 1;
     margin: $space-3 0;
+    text-align: right;
   }
 }
 .container-wrap {
@@ -75,45 +103,65 @@ body {
 .hero {
   padding: $space-3 0 $space-2;
   text-align: center;
+  @media (min-width: $mq-small) {
+    text-align: left;
+  }
+  @media (min-width: $mq-large) {
+    padding: $space-4 0 $space-3;
+  }
+}
+.hero-tags {
+  justify-content: center;
+  margin: 0 0 $space-2;
+  @media (min-width: $mq-small) {
+    justify-content: flex-start;
+  }
+  @media (min-width: $mq-medium) {
+    margin: 0;
+  }
 }
 .hero-header {
   text-transform: capitalize;
 }
-.tags {
-  @include nolist;
-  @include flexbox;
-  justify-content: center;
-  margin: 0 0 $space-2;
-}
-.tag {
-  background: $color-grey-3;
-  border-radius: 4px;
-  @include font-size(12);
-  font-weight: 700;
-  margin: 0 $space-1 0 0;
-  text-transform: capitalize;
-  padding: 5px $space-2;
-  &:last-child {
-    margin: 0;
-  }
-}
 
 .content {
-  padding: $space-2 0;
+  padding: $space-3 0;
 }
 
 .cards {
   @include nolist;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  li {
+    counter-increment: item;
+    margin-bottom: $space-3;
+  }
 }
 
 .card {
   background: $color-white;
   border-radius: 4px;
-  counter-increment: item;
-  margin-bottom: $space-2;
+  // min-height: 360px;
+  height: 100%;
   min-width: 100%;
   padding: $space-3;
   position: relative;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  align-items: flex-end;
+  // align-content: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  // align-content: space-between;
+  > * {
+    align-self: self-start;
+    width: 100%;
+  }
+  @media (min-width: $mq-small) {
+  }
+  @media (min-width: $mq-large) {
+    // min-height: 400px;
+  }
   // @media (min-width: $mq-large) {
   //   box-shadow: 20px 20px 20px rgba(0,0,0,0.05);
   //   margin-bottom: 0;
@@ -132,13 +180,18 @@ body {
     padding-right: 5px;
     position: relative;
     width: 100%;
+    align-self: self-start;
   }
-  &:last-child {
-    margin-bottom: 0;
-  }
+}
+.card-cta {
+  align-self: flex-end;
 }
 .card-desc {
   margin: 0 0 $space-2;
+  min-height: 100px;
+}
+.card-title {
+  min-height: 60px;
 }
 .card-type {
   color: $color-grey-4;
