@@ -178,7 +178,7 @@ body {
   @include nolist;
   @include flexbox;
   @include flex-wrap(wrap);
-  li {
+  & > li {
     counter-increment: item;
     margin-bottom: $space-3;
   }
@@ -247,6 +247,16 @@ body {
   right: $space-3;
   text-align: right;
   top: $space-3;
+}
+.card-tags {
+  margin: 0 0 $space-1 0;
+  @include flexbox;
+  @include flex-wrap(wrap);
+  justify-content: space-between;
+  .tag {
+    flex-grow: 2;
+    margin: 0 $space-1 $space-1 0;
+  }
 }
 
 // Themes

@@ -2,14 +2,14 @@
   .hero.block
     .container-fluid
       .row.align-items-end
-        .col-12.col-md-8.col-lg-6.col-xl-6
+        .col-12.col-md-8.col-lg-6.col-xl-4
           h1.hero-header = current_article.title
           p.hero-abstract = current_article.data.abstract
           ul.tags.hero-tags.hero-tags-branches
             - current_article.tags.each do |tag|
               li.tag
                 | #{tag}
-        .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-3
+        .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-5
           = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
   .content.block
     ol.cards.row

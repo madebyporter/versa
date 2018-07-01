@@ -20,9 +20,9 @@ title: Latest Twigs
         .card.card-twig
           h2.card-title = topic.data.title
           p.card-desc = topic.data.abstract
-          ul
+          ul.tags.card-tags
             - topic.tags.each do |tag|
-              li
+              li.tag
                 | #{tag}
           p.card-type = topic.data.type
           = link_to "Learn", topic.url, :class => "btn btn-default card-cta"
