@@ -266,7 +266,7 @@ body {
 }
 
 // Themes
-body.twigs, body.branches, body.trunks {
+body.twigs {
   $border-color: $color-grey-3;
 
   background: $color-grey-2;
@@ -280,9 +280,9 @@ body.twigs, body.branches, body.trunks {
   }
 }
 
-body.index {
+body.index, body.branches, body.trunks {
   $border-color: lighten($color-grey-6,10%);
-  $text-color: #666666;
+  $text-color: $color-grey-4;
 
   background: $color-grey-6;
   .masthead {
@@ -312,6 +312,9 @@ body.index {
     background: transparent;
     border-bottom: 1px solid $border-color;
     color: $text-color;
+  }
+  .hero-header {
+    color: $color-white;
   }
   .card {
     border-color: transparent;
