@@ -43,10 +43,10 @@ set :debug_assets, true
 
 activate :blog do |blog|
   # set options on blog
-  blog.prefix = "twigs"
+  blog.prefix = "/"
   blog.layout = "twigs_layout"
-  blog.permalink = "{category}/{title}.html"
-  blog.sources = "{title}.html"
+  blog.permalink = "twigs/{category}/{title}.html"
+  blog.sources = "twigs/{title}.html"
 
   blog.taglink = "branches/{tag}.html"
   blog.tag_template = "branch.html"
