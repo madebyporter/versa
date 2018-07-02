@@ -22,10 +22,20 @@ html
         .container-fluid
           .row
             .col-4.col-sm-2
-              a.masthead-logo href="/" Logo
+              a.masthead-logo href="/"
+                doctype XML
+                svg.masthead-logo-svg height="20px" version="1.1" viewbox=("0 0 29 20") width="29px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  defs
+                  g#Page-1 fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"
+                    g#Desktop-HD transform="translate(-105.000000, -41.000000)"
+                      g#Group-4 transform="translate(-1.000000, -1.000000)"
+                        g#versa-logo transform="translate(106.000000, 42.000000)"
+                          polygon.masthead-logo-svg--left fill="#999999" points=("0 2.70509364e-14 9.76384295 2.84217094e-14 13.6122449 8.006145 8.99805135 17.4591837")
+                          polygon.masthead-logo-svg--right fill="#000000" points=("9.76530612 0 19.3826531 0 29 19.2346939 19.3826531 19.2346939") transform="translate(19.382653, 9.617347) scale(-1, 1) translate(-19.382653, -9.617347) "
+
             .col-4.col-sm-8
               nav.nav.masthead-nav
-                = link_to "Twigs", "/", :class => "nav-link"
+                = link_to "Twigs", "/twigs", :class => "nav-link"
                 = link_to "Branches", "/branches", :class => "nav-link"
                 = link_to "Trunks", "/trunks", :class => "nav-link"
 

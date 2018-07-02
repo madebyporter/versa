@@ -43,11 +43,29 @@ set :debug_assets, true
 
 activate :blog do |blog|
   # set options on blog
-  blog.prefix = "topics"
-  blog.layout = "topic_layout"
-  blog.permalink = "/{title}.html"
+  blog.prefix = "twigs"
+  blog.layout = "twigs_layout"
+  blog.permalink = "{category}/{title}.html"
   blog.sources = "{title}.html"
+
+  blog.taglink = "branches/{tag}.html"
+  blog.tag_template = "branch.html"
+
+  # Custom collection
+  blog.custom_collections = {
+    category: {
+      link: '/trunks/{category}.html',
+      template: '/trunk.html'
+    }
+  }
 end
+
+# ready do
+#   sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
+#     proxy "/trunks/#{category}.html", "trunks.html",
+#       :locals => { :category => category, :pages => pages }
+#   end
+# end
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -57,9 +75,7 @@ end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     'Helping'
-#   end
+#
 # end
 
 # Build-specific configuration

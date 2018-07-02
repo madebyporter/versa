@@ -73,12 +73,13 @@ body {
 }
 
 .masthead-logo {
-  background: url('../images/versa-logo.svg') no-repeat left center;
-  background-size: 29px 20px;
-  @include text-hide;
-  @include font-size(18);
-  font-weight: 700;
+  // background: url('../images/versa-logo.svg') no-repeat left center;
+  // background-size: 29px 20px;
+  // @include text-hide;
+  // @include font-size(18);
+  // font-weight: 700;
   display: block;
+  position: relative;
   height: 60px;
   width: 100%;
 
@@ -86,6 +87,10 @@ body {
     height: 100px;
   }
 }
+.masthead-logo-svg {
+  @include vertical-center;
+}
+
 .masthead-menu-trigger {
   cursor: pointer;
   @include font-size(18);
@@ -238,6 +243,7 @@ body {
 }
 .card-title {
   min-height: 60px;
+  text-transform: capitalize;
 }
 .card-type {
   color: $color-grey-4;
@@ -260,7 +266,7 @@ body {
 }
 
 // Themes
-body.topics {
+body.twigs, body.branches, body.trunks {
   $border-color: $color-grey-3;
 
   background: $color-grey-2;
@@ -271,5 +277,43 @@ body.topics {
   .hero {
     background: $color-grey-1;
     border-bottom: 1px solid $border-color;
+  }
+}
+
+body.index {
+  $border-color: lighten($color-grey-6,10%);
+  $text-color: #666666;
+
+  background: $color-grey-6;
+  .masthead {
+    background: transparent;
+    border-bottom: 1px solid $border-color;
+  }
+  .masthead-logo-svg--left {
+    fill: $color-white;
+  }
+  .masthead-logo-svg--right {
+    fill: $color-grey-2;
+  }
+  .masthead-menu-trigger {
+    color: $text-color;
+    &:hover {
+      color: $color-white;
+    }
+  }
+  .nav-link {
+    border-color: $border-color;
+    color: $text-color;
+    &:hover {
+      color: $color-white;
+    }
+  }
+  .hero {
+    background: transparent;
+    border-bottom: 1px solid $border-color;
+    color: $text-color;
+  }
+  .card {
+    border-color: transparent;
   }
 }
