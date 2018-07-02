@@ -75,7 +75,6 @@ end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#
 # end
 
 # Build-specific configuration
