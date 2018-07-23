@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  name: gitlab
+  repo: madebyporter/versa
+  branch: master
 
 # This line should *not* be indented
 # publish_mode: editorial_workflow
@@ -8,7 +9,6 @@ backend:
 # These lines should *not* be indented
 public_folder: "twigs"
 media_folder: "twigs/media"
-
 
 collections:
   - name: "twigs" # Used in routes, e.g., /admin/collections/blog
