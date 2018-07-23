@@ -26,8 +26,7 @@ collections:
       - label: "Branches"
         name: "tags"
         widget: "list"
-        fields:
-          - {label: "Branch", name: "branch", widget: "select", options: ["UX Design", "UI Design", "Graphic Design", "Interaction Design", "Web Design"]}
+        field: {widget: "select", options: ["UX Design", "UI Design", "Graphic Design", "Interaction Design", "Web Design"]}
       - {label: "Abstract", name: "abstract", widget: "text"}
       - label: "Links"
         name: "links"
