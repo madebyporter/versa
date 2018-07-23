@@ -3,7 +3,7 @@ title: Illustration
 date: 2018-06-25 09:08 UTC
 category: design
 tags: graphic design, product design, web design
-abstract: Get started learning about how to be an illustrator.
+abstract: A decoration, interpretation or visual explanation of a text, concept or process.
 links:
   - name: Illustration - Wikipedia
     desc: An illustration is a picture that tries to get the person looking at it to pay more attention to the subject than to the art.
