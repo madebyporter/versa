@@ -7,7 +7,7 @@
           p.hero-abstract = current_article.data.abstract
           .tags.hero-tags.hero-tags-branches
             - current_article.tags.each do |tag|
-              = link_to tag.capitalize, tag_path( tag ), :class => "tag"
+              = link_to tag, tag_path( tag ), :class => "tag"
         .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-1
           = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
   .content.block

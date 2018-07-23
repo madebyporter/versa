@@ -2,7 +2,7 @@
 title: Illustration
 date: 2018-06-25 09:08 UTC
 category: design
-tags: graphic design, product design, web design
+tags: Graphic Design, Product Design, Web Design
 abstract: A decoration, interpretation or visual explanation of a text, concept or process.
 links:
   - name: Illustration - Wikipedia

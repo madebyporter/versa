@@ -56,11 +56,11 @@ body {
 .tag {
   background: $color-grey-3;
   border-radius: 4px;
-  @include font-size(10);
+  @include font-size(12);
   font-weight: 700;
   margin: $space-1 $space-1 0 0;
   padding: 5px $space-2;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
   &:last-child {
     margin-right: 0;
@@ -245,7 +245,7 @@ body {
 }
 .card-title {
   min-height: 60px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .card-type {
   color: $color-grey-4;

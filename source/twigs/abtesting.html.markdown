@@ -2,7 +2,7 @@
 title: A/B Testing
 date: 2018-06-25 09:08 UTC
 category: design
-tags: UX design, interaction design, web design, UI design
+tags: UX Design, Interaction Design, Web Design, UI Design
 abstract: A/B Testing Description
 links:
   - name: Wikipedia - A/B Testing

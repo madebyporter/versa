@@ -7,8 +7,8 @@ backend:
 # publish_mode: editorial_workflow
 
 # These lines should *not* be indented
-public_folder: "twigs"
-media_folder: "twigs/media"
+public_folder: "source/twigs"
+media_folder: "source/twigs/media"
 
 collections:
   - name: "twigs" # Used in routes, e.g., /admin/collections/blog
@@ -21,7 +21,11 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Trunk", name: "category", widget: "string"}
-      - {label: "Branches", name: "tags", widget: "list"}
+      - label: "Branches"
+        name: "tags"
+        widget: "list"
+        fields:
+          - {label: "Branch", name: "branch", widget: "select", options: ["UX Design", "UI Design", "Graphic Design", "Interaction Design", "Web Design"]}
       - {label: "Abstract", name: "abstract", widget: "text"}
       - label: "Links"
         name: "links"

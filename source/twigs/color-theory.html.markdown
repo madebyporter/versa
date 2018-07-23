@@ -2,7 +2,7 @@
 title: Color Theory
 date: 2018-06-25 09:08 UTC
 category: design
-tags: graphic design, product design, web design
+tags: Graphic Design, Product Design, Web Design
 abstract: Learn about the history of color, mixing color, the psychology of color, and application of color.
 links:
   - name: Color Theory - Wikipedia
