@@ -7,7 +7,7 @@ backend:
 # publish_mode: editorial_workflow
 
 # These lines should *not* be indented
-public_folder: "source/twigs"
+public_folder: "source"
 media_folder: "source/twigs/media"
 
 collections:
