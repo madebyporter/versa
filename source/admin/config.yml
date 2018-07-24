@@ -3,7 +3,7 @@ backend:
   branch: master
 
 # This line should *not* be indented
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 # These lines should *not* be indented
 public_folder: "source/twigs"
@@ -13,7 +13,7 @@ display_url: https://versa.netlify.com
 collections:
   - name: "twigs" # Used in routes, e.g., /admin/collections/blog
     label: "Twig" # Used in the UI
-    folder: "/source/twigs/" # The path to the folder where the documents are stored
+    folder: "source/twigs/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "html.markdown"
