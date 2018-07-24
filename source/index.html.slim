@@ -8,19 +8,18 @@ title: Latest Twigs
         h1
           | Versa. Its about learning semantically. Start with <a href="/trunks/design/">Design</a>.
 .content.content-card-medium.block
-  .container-fluid
-    .row
-      .col-12
-        ol.cards.row
-          - page_articles[0...3].each_with_index do |article, i|
-            li.col-12.col-sm-12.col-md-6.col-lg-4
-              .card.card-twig
-                h2.card-title = article.data.title
-                p.card-desc = article.data.abstract
-                / .tags.card-tags
-                /   - article.tags.each do |tag|
-                /     = link_to tag.capitalize, tag_path( tag ), :class => "tag"
-                /     / li.tag
-                /     /   | #{tag}
-                p.card-type = article.data.type
-                = link_to "Learn", article.url, :class => "btn btn-default card-cta"
+  .row
+    .col-12
+      ol.cards.row
+        - page_articles[0...3].each_with_index do |article, i|
+          li.col-12.col-sm-12.col-md-6.col-lg-4
+            .card.card-twig
+              h2.card-title = article.data.title
+              p.card-desc = article.data.abstract
+              / .tags.card-tags
+              /   - article.tags.each do |tag|
+              /     = link_to tag.capitalize, tag_path( tag ), :class => "tag"
+              /     / li.tag
+              /     /   | #{tag}
+              p.card-type = article.data.type
+              = link_to "Learn", article.url, :class => "btn btn-default card-cta"
