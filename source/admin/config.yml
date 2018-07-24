@@ -2,7 +2,6 @@ backend:
   name: gitlab
   repo: madebyporter/versa
   branch: master
-  base_url: https://gitlab.com
 
 # This line should *not* be indented
 # publish_mode: editorial_workflow
@@ -11,8 +10,6 @@ backend:
 public_folder: "source/twigs"
 media_folder: "source/twigs/media"
 
-display_url: https://versa.netlify.com
-
 collections:
   - name: "twigs" # Used in routes, e.g., /admin/collections/blog
     label: "Twig" # Used in the UI
@@ -20,7 +17,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "html.markdown"
-    format: "yaml-frontmatter"
+    format: "frontmatter"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "twigs_layout"}
       - {label: "Title", name: "title", widget: "string"}
