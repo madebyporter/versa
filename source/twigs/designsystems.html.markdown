@@ -2,7 +2,11 @@
 title: Design Systems
 date: 2018-06-25 09:08 UTC
 category: design
-tags: UX Design, Interaction Design, Web Design, UI Design
+tags:
+  - UX Design
+  - Interaction Design
+  - Web Design
+  - UI Design
 abstract: Design Systems Description
 links:
   - name: Pattern Lab
