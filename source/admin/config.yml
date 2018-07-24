@@ -1,6 +1,5 @@
 backend:
-  name: gitlab
-  repo: madebyporter/versa
+  name: git-gateway
   branch: master
 
 # This line should *not* be indented
@@ -9,6 +8,7 @@ backend:
 # These lines should *not* be indented
 public_folder: "source/twigs"
 media_folder: "source/twigs/media"
+display_url: https://versa.netlify.com
 
 collections:
   - name: "twigs" # Used in routes, e.g., /admin/collections/blog
