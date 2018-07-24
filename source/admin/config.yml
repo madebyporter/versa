@@ -25,11 +25,9 @@ collections:
       - {label: "Trunk", name: "category", widget: "string"}
       - label: "Branches"
         name: "tags"
-        widget: "string"
+        widget: "list"
         # fields:
-        # - label: "tag"
-        #   name: "tag"
-        #   widget: "select"
+        # - widget: "select"
         #   options: ["UX Design", "UI Design", "Graphic Design", "Interaction Design", "Web Design"]
       - {label: "Abstract", name: "abstract", widget: "text"}
       - label: "Links"

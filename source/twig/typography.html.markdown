@@ -1,7 +1,7 @@
 ---
 title: Typography
 date: 2018-06-25 09:08 UTC
-category: design
+category: Design
 tags: Graphic Design, Product Design, Web Design
 abstract: Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed.
 links:

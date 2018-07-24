@@ -1,26 +1,61 @@
 ---
 title: Suggest a Link
 ---
-.row
-  .col-lg-6
-    form name="suggustlink" method="POST" netlify="netlify"
-      fieldset
-        label Name
-        input type="text" name="name"
-      fieldset
-        label Email
-        input type="email" name="email"
-      fieldset
-        label URL
-        input type="url" name="url"
-      fieldset
-        label Title
-        input type="text" name="title"
-      fieldset
-        label Description
-        textarea name="description"
-      fieldset
-        label Topic
-        input type="text" name="topic"
-      fieldset
-        button type="submit" Submit
+.hero.block
+  .container-fluid
+    .row.align-items-end
+      .col-12.col-md-8.col-lg-6.col-xl-6
+        h1.hero-header =  current_page.data.title
+
+.content.block
+  .container-fluid
+    .row
+      .col-lg-6
+        form.form-suggest name="suggustlink" method="POST" netlify="netlify"
+          .row
+            .col-lg-12
+              h2
+                | Basic Info
+          fieldset.form-fieldset
+            .row
+              .col-lg-6
+                label.form-label Name
+                input.form-input type="text" name="name"
+              .col-lg-6
+                label.form-label Email
+                input.form-input type="email" name="email"
+
+          .row
+            .col-lg-12
+              h2
+                | Link Info
+          fieldset.form-fieldset
+            .row
+              .col-lg-12
+                label.form-label Title
+                input.form-input type="text" name="title"
+            .row
+              .col-lg-12
+                label.form-label URL
+                input.form-input type="url" name="url"
+            .row
+              .col-lg-12
+                label.form-label Topic
+                select#topicSelect.form-input name="topic"
+                  option value="Select Topic"
+                    | Select Topic
+                  option id="newTopic" value="New Topic"
+                    | New Topic
+                  - page_articles.sort_by(&:title).each_with_index do |article, i|
+                    option value="#{article.data.title}" = article.data.title
+              .col-lg-12
+                input#newTopicField.form-input type="text" name="newtopic" style="display: none" placeholder="Enter New Topic"
+            .row
+              .col-lg-12
+                label.form-label Description
+                textarea.form-textarea name="description"
+
+          fieldset.form-fieldset
+            .row
+              .col-lg-4.offset-lg-8
+                button.form-submit type="submit" Submit

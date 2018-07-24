@@ -15,7 +15,7 @@ html
     script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
 
     == stylesheet_link_tag :site
-    == javascript_include_tag  "all", "jquery", "jquery.waypoints.min.js"
+    == javascript_include_tag  "jquery", "jquery.waypoints.min.js", "all"
 
   body class="#{page_classes}"
     main.wrapper
@@ -36,7 +36,7 @@ html
 
             .col-4.col-sm-8
               nav.nav.masthead-nav
-                = link_to "Twigs", "/", :class => "nav-link"
+                = link_to "Twigs", "/twigs", :class => "nav-link"
                 = link_to "Branches", "/branches", :class => "nav-link"
                 = link_to "Trunks", "/trunks", :class => "nav-link"
 

@@ -1,7 +1,7 @@
 ---
 title: A/B Testing
 date: 2018-06-25 09:08 UTC
-category: design
+category: Design
 tags: UX Design, Interaction Design, Web Design, UI Design
 abstract: A/B Testing Description
 links:

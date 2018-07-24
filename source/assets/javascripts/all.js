@@ -8,7 +8,7 @@ var js = js || {},
 js.main = {
   init: function () {
     this.linksExternal();
-    // this.horiVertScroll();
+    this.newTopic();
     // this.fbPixel();
     // this.waypointsTwigs();
   },
@@ -21,38 +21,6 @@ js.main = {
         value: 10.00,
         currency: 'USD'
       });
-    });
-  },
-  horiVertScroll: function () {
-    $.fn.hScroll = function( options ){
-       function scroll( obj, e )
-       {
-         var evt = e.originalEvent;
-         var direction = evt.detail ? evt.detail * (-80) : evt.wheelDelta;
-
-         if( direction > 0)
-         {
-            direction =  $(obj).scrollLeft() - 80;
-         }
-         else
-         {
-            direction = $(obj).scrollLeft() + 80;
-         }
-
-         $(obj).scrollLeft( direction );
-
-         e.preventDefault();
-       }
-
-       $(this).width( $(this).find('div').width() );
-
-       $(this).bind('DOMMouseScroll mousewheel', function( e )
-       {
-        scroll( this, e );
-       });
-    };
-    $(document).ready(function(){
-         $('.twig-links').hScroll();
     });
   },
   linksExternal: function () {
@@ -78,6 +46,19 @@ js.main = {
     });
     $('.newWindow').click(function(){
       window.open($(this).attr('href')); return false;
+    });
+  },
+  newTopic: function () {
+    $("#topicSelect").change(function(){
+      var id = $(this).find("option:selected").attr("id");
+
+      switch (id){
+        case "newTopic":
+          $("#newTopicField").show();
+          break;
+        default:
+          $("#newTopicField").hide();
+      }
     });
   },
   waypointsTwigs: function (){

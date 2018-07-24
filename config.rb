@@ -45,8 +45,8 @@ activate :blog do |blog|
   # set options on blog
   blog.prefix = "/"
   blog.layout = "twigs_layout"
-  blog.permalink = "twigs/{category}/{title}.html"
-  blog.sources = "twigs/{title}.html"
+  blog.permalink = "twig/{category}/{title}.html"
+  blog.sources = "twig/{title}.html"
 
   blog.taglink = "branches/{tag}.html"
   blog.tag_template = "branch.html"
