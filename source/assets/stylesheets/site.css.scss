@@ -262,8 +262,12 @@ body {
   @include flex-wrap(wrap);
   justify-content: space-between;
   .tag {
+    background: $color-grey-1;
+    color: $color-grey-5;
     flex-grow: 2;
-    margin: 0 $space-1 0 0;
+    margin: 0 0 $space-1 0;
+    text-decoration: none;
+    width: 100%;
     &:last-child {
       margin-right: 0;
     }
@@ -396,6 +400,9 @@ body.index, body.twigs, body.branches, body.trunks, body.suggest-link {
   }
   .card-cta, .card-desc {
     @include font-size(24);
+  }
+  .tag {
+    @include font-size(16);
   }
 }
 body.index {

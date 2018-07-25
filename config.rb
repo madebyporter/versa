@@ -60,6 +60,20 @@ activate :blog do |blog|
   }
 end
 
+def page_title(site_name, separator = ' – ')
+  local_title = current_page.data.title or page_heading
+  [local_title, site_name].compact.join(separator)
+end
+
+def page_heading(title = nil, options = {})
+  if title
+    @page_heading = title
+    content_tag(:h1, title, options)
+  else
+    @page_heading
+  end
+end
+
 # ready do
 #   sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
 #     proxy "/trunks/#{category}.html", "trunks.html",
