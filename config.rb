@@ -31,15 +31,17 @@ set :relative_links, true
 activate :relative_assets
 set :debug_assets, true
 
-# Sounds Layout
-# page "/sounds/*", :layout => "sounds_layout"
-
-# Contact Layout
-# page "/contact/*", :layout => "contact_layout"
 
 ###
 # Helpers
 ###
+
+activate :meta_tags
+helpers do
+  def my_tags
+    set_meta_tags key => value
+  end
+end
 
 activate :blog do |blog|
   # set options on blog
@@ -60,14 +62,6 @@ activate :blog do |blog|
   }
 end
 
-activate :meta_tags
-
-# ready do
-#   sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
-#     proxy "/trunks/#{category}.html", "trunks.html",
-#       :locals => { :category => category, :pages => pages }
-#   end
-# end
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -90,6 +84,3 @@ configure :build do
 
   # ignore '*.php'
 end
-
-# string = File.read('data/soundlist.json')
-# json = JSON.parse(string)

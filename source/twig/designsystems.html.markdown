@@ -3,7 +3,7 @@ title: Design Systems
 date: 2018-07-22 09:08 UTC
 category: Design
 tags: UX Design, Interaction Design, Web Design, UI Design
-abstract: Design Systems Description
+abstract: A framework of design components used for websites and applications.
 links:
   - name: Pattern Lab
     desc: Pattern Lab helps you and your team build thoughtful, pattern-driven user interfaces using atomic design principles.

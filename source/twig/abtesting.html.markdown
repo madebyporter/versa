@@ -3,7 +3,7 @@ title: A/B Testing
 date: 2018-06-25 09:08 UTC
 category: Design
 tags: UX Design, Interaction Design, Web Design, UI Design
-abstract: A/B Testing Description
+abstract: A randomized experiment with two variants, A and B. Used to test features and interfaces on websites and applications.
 links:
   - name: Wikipedia - A/B Testing
     desc: A/B Testing is a randomized experiment with two variants, A and B.
