@@ -6,7 +6,8 @@ title: Latest Branches
   .container-fluid
     .row.align-items-end
       .col-12.col-md-8.col-lg-6.col-xl-6
-        h1.hero-header = current_page.data.title
+        h1.hero-header
+          = set_meta_tags title "Latest Branches"
         p
           | Branches are disciplines within a school of thought. Good for viewing twigs in related groups.
       .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-3

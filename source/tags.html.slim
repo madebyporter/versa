@@ -1,12 +1,13 @@
 ---
-title: Branch
+pageable: true
 ---
 
 .hero.block
   .container-fluid
     .row.align-items-end
       .col-12.col-md-8.col-lg-6.col-xl-6
-        h1.hero-header = tagname
+        h1.hero-header
+          = set_meta_tags title: "#{tagname}"
       .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-3
         = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
 .content.content-card-medium.block

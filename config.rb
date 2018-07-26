@@ -49,30 +49,18 @@ activate :blog do |blog|
   blog.sources = "twig/{title}.html"
 
   blog.taglink = "branches/{tag}.html"
-  blog.tag_template = "branch.html"
+  blog.tag_template = "tags.html"
 
   # Custom collection
   blog.custom_collections = {
     category: {
       link: '/trunks/{category}.html',
-      template: '/trunk.html'
+      template: '/categories.html'
     }
   }
 end
 
-def page_title(site_name, separator = ' – ')
-  local_title = current_page.data.title or page_heading
-  [local_title, site_name].compact.join(separator)
-end
-
-def page_heading(title = nil, options = {})
-  if title
-    @page_heading = title
-    content_tag(:h1, title, options)
-  else
-    @page_heading
-  end
-end
+activate :meta_tags
 
 # ready do
 #   sitemap.resources.group_by {|p| p.data["category"] }.each do |category, pages|
