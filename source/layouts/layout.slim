@@ -6,7 +6,8 @@ html
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
     / title = "#{current_page.data.title} / Versa" || "Versa"
-    = display_meta_tags site: "Versa"
+    / == display_meta_tags site: "Versa"
+    title = "#{current_page.data.title}"
 
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
 
@@ -41,9 +42,9 @@ html
                 = link_to "Branches", "/branches", :class => "nav-link"
                 = link_to "Trunks", "/trunks", :class => "nav-link"
 
-            .col-4.col-sm-2
-              .menu-trigger.masthead-menu-trigger
-                i class="fas fa-bars"
+            / .col-4.col-sm-2
+            /   .menu-trigger.masthead-menu-trigger
+            /     i class="fas fa-bars"
       == yield
 
     javascript:

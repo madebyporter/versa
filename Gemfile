@@ -15,4 +15,4 @@ gem 'middleman-sprockets', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem "middleman-blog", "~> 4.0"
-gem 'middleman-meta-tags'
+gem 'titleize'

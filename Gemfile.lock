@@ -81,8 +81,6 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    middleman-meta-tags (0.4.0)
-      middleman-core (>= 3.0.0)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -113,6 +111,7 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    titleize (1.4.1)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -125,11 +124,11 @@ DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-blog (~> 4.0)
   middleman-livereload
-  middleman-meta-tags
   middleman-sprockets (>= 4.0.0)
   slim (>= 3.0)
+  titleize
   tzinfo-data
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.16.2
+   1.16.3

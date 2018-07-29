@@ -36,13 +36,6 @@ set :debug_assets, true
 # Helpers
 ###
 
-activate :meta_tags
-helpers do
-  def my_tags
-    set_meta_tags key => value
-  end
-end
-
 activate :blog do |blog|
   # set options on blog
   blog.prefix = "/"
@@ -70,8 +63,13 @@ end
 
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-# end
+helpers do
+  def discover_title(page = current_page)
+    page.data.title || page.render({layout: false}).match(/<h.+>(.*?)<\/h1>/) do |m|
+      m ? m[1] : page.url.split(/\//).last.titleize
+    end
+  end
+end
 
 # Build-specific configuration
 configure :build do
