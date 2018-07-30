@@ -9,6 +9,7 @@ js.main = {
   init: function () {
     this.linksExternal();
     this.newTopic();
+    this.tagTitle();
     // this.fbPixel();
     // this.waypointsTwigs();
   },
@@ -60,6 +61,10 @@ js.main = {
           $("#newTopicField").hide();
       }
     });
+  },
+  tagTitle: function () {
+    var h1 = $('h1').text();
+    document.title = "Versa - " + h1;
   },
   waypointsTwigs: function (){
     var waypoint = new Waypoint({

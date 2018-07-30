@@ -145,6 +145,9 @@ body {
 }
 .footer {
   padding: $space-2 0;
+  a {
+    font-weight: 700;
+  }
 }
 .footer-text {
   padding: 0.5rem 0;
@@ -334,9 +337,6 @@ body.twig {
   }
   .footer {
     border-top: 1px solid $border-color;
-    a {
-      font-weight: 700;
-    }
   }
 }
 
@@ -390,6 +390,10 @@ body.index, body.twigs, body.branches, body.trunks, body.suggest-link {
   }
   .footer {
     border-top: 1px solid $border-color;
+    color: $color-grey-4;
+    a {
+      color: #007bff;
+    }
   }
 }
 
