@@ -46,7 +46,16 @@ html
             /   .menu-trigger.masthead-menu-trigger
             /     i class="fas fa-bars"
       == yield
-
+      footer.footer.block
+        .container-fluid
+          .row
+            .col-sm-6
+              nav.nav.footer-nav
+                = link_to "About", "/about", :class => "nav-link"
+                = link_to "Privacy Policy", "/privacy", :class => "nav-link"
+            .col-sm-6
+              .footer-text.text-align-right
+                | Created by <a href="https://www.madebyporter.com">Chris Porter</a> of <a href="https://www.ssfn.io">SSFN Collective</a>.
     javascript:
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

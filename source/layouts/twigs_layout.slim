@@ -3,8 +3,7 @@
     .container-fluid
       .row.align-items-end
         .col-12.col-md-8.col-lg-6.col-xl-8
-          h1.hero-header
-            = set_meta_tags title: "#{current_article.title}"
+          h1.hero-header = current_article.title
           p.hero-abstract = current_article.data.abstract
           .tags.hero-tags.hero-tags-branches
             - current_article.tags.each do |tag|
