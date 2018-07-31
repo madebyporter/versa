@@ -13,7 +13,7 @@ links:
     desc: Material Design is an adaptable system backed by open-source code that helps teams build high quality digital experiences.
     type: tools
     url: https://material.io/design/
-  - name: Design Better: Design Systems Handbook
+  - name: Design Better - Design Systems Handbook
     desc: Your guide to design systems best practices.
     type: reference
     url: https://www.designbetter.co/design-systems-handbook
