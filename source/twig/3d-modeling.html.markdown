@@ -29,7 +29,10 @@ links:
     name: Quick Guide to 3D Modeling in VR
     type: content
     url: 'https://www.mold3d.com/blog/2017/7/11/vr-art'
-  - desc: three.js - Javascript 3D library
+  - desc: >-
+      A cross-browser JavaScript library and Application Programming Interface
+      (API) used to create and display animated 3D computer graphics in a web
+      browser.
     name: three.js
     type: tools
     url: 'https://threejs.org/'
