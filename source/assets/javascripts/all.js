@@ -64,7 +64,9 @@ js.main = {
   },
   tagTitle: function () {
     var h1 = $('h1').text();
-    document.title = "Versa - " + h1;
+    if(!$('body').hasClass('index')){
+      document.title = "Versa - " + h1;
+    }  
   },
   waypointsTwigs: function (){
     var waypoint = new Waypoint({

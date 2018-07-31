@@ -44,10 +44,19 @@ body {
 .btn-black {
   background: $color-black;
   color: $color-white;
+  &:hover {
+    background: darken($color-black,5%);
+    color: $color-white;
+  }
 }
 .btn-default {
   border: 1px solid $color-grey-3;
   color: $color-black;
+  &:hover {
+    background: $color-grey-5;
+    border: 1px solid $color-grey-5;
+    color: $color-white;
+  }
 }
 
 .tags {
@@ -64,8 +73,13 @@ body {
   padding: 5px $space-2;
   text-transform: none;
   white-space: nowrap;
+  @include transition;
   &:last-child {
     margin-right: 0;
+  }
+  &:hover {
+    background: $color-grey-4;
+    color: $color-grey-5;
   }
 }
 
@@ -283,6 +297,10 @@ body {
     &:last-child {
       margin-right: 0;
     }
+    &:hover {
+      background: $color-grey-2;
+      color: $color-grey-5;
+    }
   }
 }
 
@@ -322,25 +340,50 @@ body {
 
 
 // Themes
-
-body.twig {
-  $border-color: $color-grey-3;
-
-  background: $color-grey-2;
-  .masthead {
-    background: $color-white;
-    border-bottom: 1px solid $border-color;
+.content-p-medium {
+  h2, h3 {
+    margin: 0 0 $space-2 0;
   }
-  .hero {
-    background: $color-grey-1;
-    border-bottom: 1px solid $border-color;
+  p {
+    @include font-size(18);
+    line-height: 1.5;
+    margin: 0 0 $space-2 0;
   }
-  .footer {
-    border-top: 1px solid $border-color;
+}
+.content-card-large {
+  .card {
+    &:before {
+      @include font-size(48);
+    }
+  }
+  .card-title {
+    @include font-size(81);
+    margin: 0 0 $space-4;
+    word-wrap: break-word;
+  }
+  .card-cta, .card-desc {
+    @include font-size(36);
+  }
+}
+.content-card-medium {
+  .card {
+    &:before {
+      @include font-size(36);
+    }
+  }
+  .card-title {
+    @include font-size(48);
+    margin: 0 0 $space-3;
+  }
+  .card-cta, .card-desc {
+    @include font-size(24);
+  }
+  .tag {
+    @include font-size(16);
   }
 }
 
-body.index, body.twigs, body.branches, body.trunks, body.suggest-link {
+.skin-black {
   $border-color: lighten($color-grey-6,10%);
   $text-color: $color-grey-4;
 
@@ -396,38 +439,40 @@ body.index, body.twigs, body.branches, body.trunks, body.suggest-link {
     }
   }
 }
+.skin-grey {
+  $border-color: $color-grey-3;
 
-.content-card-large {
-  .card {
-    &:before {
-      @include font-size(48);
-    }
+  background: $color-grey-2;
+  .masthead {
+    background: $color-white;
+    border-bottom: 1px solid $border-color;
   }
-  .card-title {
-    @include font-size(81);
-    margin: 0 0 $space-4;
-    word-wrap: break-word;
+  .hero {
+    background: $color-grey-1;
+    border-bottom: 1px solid $border-color;
   }
-  .card-cta, .card-desc {
-    @include font-size(36);
+  .footer {
+    border-top: 1px solid $border-color;
   }
 }
-.content-card-medium {
-  .card {
-    &:before {
-      @include font-size(36);
-    }
+.skin-white {
+  $border-color: $color-grey-3;
+  .masthead {
+    border-bottom: 1px solid $border-color;
   }
-  .card-title {
-    @include font-size(48);
-    margin: 0 0 $space-3;
+  .footer {
+    border-top: 1px solid $border-color;
   }
-  .card-cta, .card-desc {
-    @include font-size(24);
-  }
-  .tag {
-    @include font-size(16);
-  }
+}
+
+body.about {
+  @extend .skin-white;
+}
+body.twig {
+  @extend .skin-grey;
+}
+body.index, body.twigs, body.branches, body.trunks, body.suggest-link {
+  @extend .skin-black;
 }
 body.index {
   h1 {
