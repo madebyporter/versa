@@ -57,5 +57,24 @@ links:
     name: The Ultimate Guide to Learning 3D
     type: resources
     url: 'https://blog.prototypr.io/the-ultimate-guide-to-learning-3d-e69a3a64231e'
+  - desc: 'Open Source 3D creation. Free to use for any purpose, forever.'
+    name: Blender
+    type: tools
+    url: 'https://www.blender.org/'
+  - desc: >-
+      The world’s largest platform to publish, share, and discover 3D content on
+      web, mobile, AR, and VR.
+    name: Sketchfab
+    type: resources
+    url: 'https://sketchfab.com/'
+  - desc: 'Browse, discover, and download 3D objects and scenes. '
+    name: Poly
+    type: resources
+    url: 'https://poly.google.com/'
+  - desc: |
+      A web framework for building 3D & virtual reality experiences
+    name: A-Frame
+    type: tools
+    url: 'https://aframe.io/'
 ---
 
