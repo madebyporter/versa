@@ -53,5 +53,9 @@ links:
     name: 3D Modeling for Virtual Reality Creation
     type: resources
     url: 'https://thegymnasium.com/courses/course-v1:GYM+013+0/about'
+  - desc: Resource links for all things 3D/AR/VR design
+    name: The Ultimate Guide to Learning 3D
+    type: resources
+    url: 'https://blog.prototypr.io/the-ultimate-guide-to-learning-3d-e69a3a64231e'
 ---
 
