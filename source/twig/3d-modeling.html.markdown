@@ -46,5 +46,12 @@ links:
     name: Vectary
     type: tools
     url: 'https://www.vectary.com/'
+  - desc: >-
+      3D Modeling for Virtual Reality Creation will teach you the basics of
+      Autodesk Maya to create 3D-generated imagery for use in virtual reality
+      production.
+    name: 3D Modeling for Virtual Reality Creation
+    type: resources
+    url: 'https://thegymnasium.com/courses/course-v1:GYM+013+0/about'
 ---
 
