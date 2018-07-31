@@ -18,5 +18,33 @@ links:
     name: 3D for Designers
     type: resources
     url: 'http://www.3dfordesigners.com/'
+  - desc: >-
+      Realism is important when creating 3D models of products for shopping
+      experiences. Here’s a look into our process.
+    name: How We Turn Physical Products into Realistic 3D Models for AR
+    type: content
+    url: >-
+      https://medium.com/shopify-vr/how-we-turn-physical-products-into-realistic-3d-models-for-ar-13f9dc20d964
+  - desc: 'We cover the hardware, software and art forms of 3D Modeling in VR.'
+    name: Quick Guide to 3D Modeling in VR
+    type: content
+    url: 'https://www.mold3d.com/blog/2017/7/11/vr-art'
+  - desc: three.js - Javascript 3D library
+    name: three.js
+    type: tools
+    url: 'https://threejs.org/'
+  - desc: >-
+      WebGL (Web Graphics Library) is a JavaScript API for rendering interactive
+      2D and 3D graphics within any compatible web browser without the use of
+      plug-ins.
+    name: WebGL on Wikipedia
+    type: reference
+    url: 'https://en.wikipedia.org/wiki/WebGL'
+  - desc: >-
+      Create beautiful 3D design online with drag and drop 3D modeling tool for
+      collaboration and teams.
+    name: Vectary
+    type: tools
+    url: 'https://www.vectary.com/'
 ---
 
