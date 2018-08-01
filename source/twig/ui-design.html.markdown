@@ -76,5 +76,19 @@ links:
     name: UI Garage
     type: resources
     url: 'http://uigarage.net/'
+  - desc: >-
+      Pttrns is the finest collection of design patterns, resources and
+      inspiration.
+    name: Pttrns
+    type: resources
+    url: 'https://pttrns.com/'
+  - desc: User Interface inspiration on Behance.net.
+    name: Behance - User Interface Inspiration
+    type: resources
+    url: 'https://www.behance.net/search?field=132'
+  - desc: A list of important principles of user interface design
+    name: Principles of User Interface Design
+    type: content
+    url: 'http://bokardo.com/principles-of-user-interface-design/'
 ---
 
