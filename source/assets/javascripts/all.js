@@ -66,7 +66,7 @@ js.main = {
     var h1 = $('h1').text();
     if(!$('body').hasClass('index')){
       document.title = "Versa - " + h1;
-    }  
+    }
   },
   waypointsTwigs: function (){
     var waypoint = new Waypoint({
