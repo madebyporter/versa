@@ -158,13 +158,19 @@ body {
   }
 }
 .footer {
-  padding: $space-2 0;
+  padding: $space-3 0 $space-2;
   margin: 0 0 60px 0;
   @media (min-width: $mq-medium) {
     margin: 0;
   }
   a {
     font-weight: 700;
+  }
+  .row {
+    padding: $space-1 0;
+  }
+  .row:first-child {
+    border-bottom: 1px solid;
   }
 }
 .footer-right {
@@ -210,6 +216,7 @@ body {
   }
 }
 .hero-header {
+  margin: 0 0 $space-2 0;
   text-transform: capitalize;
 }
 
@@ -328,8 +335,18 @@ body {
   @include font-size(18);
   font-weight: 800;
   margin: 0 0 $space-2 0;
-  padding: $space-1;
+  outline: none;
+  padding: $space-2;
   width: 100%;
+}
+.form-input {
+  background: $color-grey-1;
+  color: $color-grey-6;
+  @include placeholder($color-grey-4);
+  &:focus {
+    background: $color-white;
+    color: $color-grey-6;
+  }
 }
 .form-select {
   -webkit-appearance: none;
@@ -340,14 +357,38 @@ body {
   min-height: 150px;
 }
 .form-submit {
-  background: $color-red;
+  background: $color-blue;
   color: $color-white;
   &:hover {
-    background: $color-red-l1;
+    background: lighten($color-blue, 5%);
   }
 }
 
-
+.form-newsletter {
+  @include flexbox;
+  width: 100%;
+  .form-fieldset {
+    width: 100%;
+  }
+  .form-input {
+    &:nth-child(2) {
+      box-shadow: 0 -1px 0 $color-grey-3;
+      @media (min-width: $mq-small) {
+        box-shadow: -1px 0 0 $color-grey-3;
+      }
+    }
+  }
+  .form-input, .form-submit {
+    margin: 0;
+    width: 100%;
+    @media (min-width: $mq-small) {
+      width: 33.3%;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}
 
 // Themes
 .content-p-medium {
@@ -447,6 +488,9 @@ body {
     a {
       color: #007bff;
     }
+    .row {
+      border-color: $border-color;
+    }
   }
 }
 .skin-grey {
@@ -463,6 +507,9 @@ body {
   }
   .footer {
     border-top: 1px solid $border-color;
+    .row {
+      border-color: $border-color;
+    }
   }
 }
 .skin-white {
@@ -472,6 +519,9 @@ body {
   }
   .footer {
     border-top: 1px solid $border-color;
+    .row {
+      border-color: $border-color;
+    }
   }
 }
 
