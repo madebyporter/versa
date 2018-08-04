@@ -55,7 +55,6 @@ activate :blog do |blog|
   }
 end
 
-
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -79,6 +78,5 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
   set :strip_index_file, true
-
   # ignore '*.php'
 end
