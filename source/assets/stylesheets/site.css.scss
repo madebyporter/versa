@@ -525,7 +525,7 @@ body {
   }
 }
 
-body.about {
+body.about, body.privacy {
   @extend .skin-white;
 }
 body.twig {
