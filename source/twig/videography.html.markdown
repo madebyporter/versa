@@ -45,5 +45,9 @@ links:
     name: EnvatoTuts+ Video Tutorials
     type: resources
     url: 'https://photography.tutsplus.com/categories/video'
+  - desc: Learn how to shoot video on a sub $100 video camera.
+    name: $94 CAMERA | Can it shoot Cinematic video?
+    type: content
+    url: 'https://youtu.be/z4yjMRK8t9Q'
 ---
 
