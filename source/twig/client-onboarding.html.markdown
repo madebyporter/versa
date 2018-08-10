@@ -3,7 +3,7 @@ layout: twigs_layout
 title: Client Onboarding
 date: '2018-08-09T17:52:00-07:00'
 category: Business
-tags: 'Freelance, Clients'
+tags: Clients
 abstract: Learn from firms and freelancers on how they have onboard their clients.
 links:
   - desc: 7 Steps To Happier Clients And Less Churn
@@ -45,5 +45,22 @@ links:
     name: The Ultimate Guide to Excel at Client Onboarding For Agencies
     type: content
     url: 'https://www.heyorca.com/blog/client-management/client-onboarding-guide/'
+  - desc: >-
+      East Bay WordPress Meetup talk recap, including an overview of a
+      successful new client onboarding process for WordPress web design projects
+    name: How To Create An Onboarding Process And Set Expectations
+    type: content
+    url: >-
+      https://www.bourncreative.com/implement-new-client-onboarding-process-set-expectations/
+  - desc: >-
+      Proper client onboarding is a crucial part of building a relationship with
+      your client. Discover this 15-step client onboarding checklist that you
+      can implement right away.
+    name: >-
+      15-Step Client Onboarding Checklist: Onboarding Process for Financial
+      Services 
+    type: content
+    url: >-
+      https://www.theadvisorcoach.com/15-step-client-onboarding-checklist-onboarding-process-for-financial-services.html
 ---
 
