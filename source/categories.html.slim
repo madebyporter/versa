@@ -1,5 +1,6 @@
 ---
-# title: #{tagname}
+pageable: true
+per_page: 12
 ---
 
 // Trunk Detail
@@ -13,15 +14,13 @@
         = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
 .content.content-card-medium.block
   ol.cards.row
-    - blog.tags.sort.each do |tag, articles, i|
+    - page_articles.each_with_index do |article, tag, i|
       li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-6
         .card.card-feature
-          h2.card-title = tag
-          / p.card-desc = article.data.abstract
-          .tags.card-tags
-            - articles[0...2].each do |article|
-              = link_to article.title, article.url, :class => "tag"
-          = link_to "Learn", tag_path( tag ), :class => "btn btn-default card-cta"
+          h2.card-title = article.title
+          p.card-desc = article.data.abstract
+          = link_to "Learn", article.url, :class => "btn btn-default card-cta"
+          
           / .tags.card-tags
           /   - articles.sort_by(&:title).each do |article|
           /     = link_to article.title, article.url, :class => "tag"
