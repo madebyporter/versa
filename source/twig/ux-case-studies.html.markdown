@@ -11,9 +11,9 @@ abstract: >-
   potential clients and employers.
 links:
   - desc: >-
-      In the social sciences and life sciences, a case study is a research
-      method involving an up-close, in-depth, and detailed examination of a
-      subject of study (the case), as well as its related contextual conditions.
+      Acase study is a research method involving an up-close, in-depth, and
+      detailed examination of a subject of study, as well as its related
+      contextual conditions.
     name: Case Study on Wikipedia
     type: reference
     url: 'https://en.wikipedia.org/wiki/Case_study'
