@@ -66,6 +66,27 @@ links:
     type: content
     url: >-
       https://www.interaction-design.org/literature/article/how-to-create-the-perfect-structure-for-a-ux-case-study
-  - {}
+  - desc: >-
+      Curated stories on user experience, usability, and product design case
+      studies.
+    name: UX Collective's Curated Case Studies
+    type: resources
+    url: 'https://uxdesign.cc/tagged/case-study'
+  - desc: How changing “Houzz” can inspire you to change your home style
+    name: 'Houzz: A UX Case Study'
+    type: content
+    url: 'https://blog.marvelapp.com/houzz-ux-case-study/'
+  - desc: >-
+      Writing your portfolio UX case studies is easier when you follow a simple
+      structure: a beginning, a middle and an end part.
+    name: How to write the beginning of your UX case study
+    type: content
+    url: >-
+      https://www.interaction-design.org/literature/article/how-to-write-the-beginning-of-your-ux-case-study
+  - desc: "Your guide to creating a \U0001F525design portfolio"
+    name: 4 Tips for Structuring Design Case Studies
+    type: content
+    url: >-
+      https://uxplanet.org/4-tips-for-structuring-case-studies-in-your-design-portfolio-f7436fd460ec
 ---
 
