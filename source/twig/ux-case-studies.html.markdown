@@ -7,8 +7,8 @@ tags: >-
   UX Design, Web Design, Product Design, AR Design, XR Design, Interaction
   Design, UI Design, VR Design, 
 abstract: >-
-  Case Studies are the new norm for portfolio and agency websites. Here, we will
-  show you example case studies and guides on building case studies.
+  UX Case Studies help communicate design thinking for past projects to
+  potential clients and employers.
 links:
   - desc: >-
       In the social sciences and life sciences, a case study is a research
