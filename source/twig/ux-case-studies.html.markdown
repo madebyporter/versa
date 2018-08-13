@@ -1,11 +1,11 @@
 ---
 layout: twigs_layout
-title: UX Case Studies
+title: Case Studies
 date: '2018-08-13T14:43:55-07:00'
 category: Design
 tags: >-
-  UX Design, Web Design, Product Design, AR Design, XR Design, Interaction
-  Design, UI Design, VR Design, 
+  UX Design, Web Design, Product Design, AR Design, XR Design,  Interaction
+  Design, UI Design, VR Design
 abstract: >-
   UX Case Studies help communicate design thinking for past projects to
   potential clients and employers.
