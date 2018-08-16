@@ -15,5 +15,17 @@ links:
     type: content
     url: >-
       https://uxdesign.cc/micro-interactions-why-when-and-how-to-use-them-to-boost-the-ux-17094b3baaa0
+  - desc: >-
+      Microinteractions are the result of the functional, interactive details of
+      a product.
+    name: Improving User Experience With Microinteractions
+    type: content
+    url: 'https://producttribe.com/ux-design/ux-microinteractions'
+  - desc: >-
+      Microinteractions play a large role in our digital lives, even if we don’t
+      always notice them. 
+    name: 'How Micro-Interactions Improve Your UX Design '
+    type: content
+    url: 'https://www.invisionapp.com/blog/use-microinteractions-improve-ux-design/'
 ---
 
