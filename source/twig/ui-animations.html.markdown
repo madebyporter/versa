@@ -37,5 +37,15 @@ links:
     name: Micro Interactions
     type: content
     url: 'http://microinteractions.com/'
+  - desc: It’s the little things that turn a good digital product into a great one.
+    name: 'Microinteractions: Designing with Details'
+    type: tools
+    url: 'https://www.amazon.com/gp/product/1491945923'
+  - desc: >-
+      Join 19,815 designers & developers who get the five best UI animations in
+      their inboxes weekly, for free.
+    name: UI Movement
+    type: resources
+    url: 'https://uimovement.com/'
 ---
 
