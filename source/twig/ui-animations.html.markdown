@@ -47,5 +47,52 @@ links:
     name: UI Movement
     type: resources
     url: 'https://uimovement.com/'
+  - desc: >-
+      Check out Ui Animation Designs on Dribbble, your best resource to discover
+      and connect with designers worldwide. 
+    name: UI Animations on Dribbble
+    type: content
+    url: 'https://dribbble.com/tags/ui_animation'
+  - desc: 'Animate Your Ideas, Design Better Apps'
+    name: Principle
+    type: tools
+    url: 'http://principleformac.com/'
+  - desc: >-
+      Framer is the only tool you need to create interactive designs for any
+      platform.
+    name: Framer
+    type: tools
+    url: 'https://framer.com/'
+  - desc: Animated gifs for your prototype
+    name: Micro Animations
+    type: resources
+    url: 'https://www.microanimations.com/'
+  - desc: >-
+      Animations have existed for a long time. But because of the increasingly
+      better browsers and mobile processors it gets more and more important to
+      spend some time on animations in your interfaces.
+    name: Why use micro-animations in your design?
+    type: content
+    url: 'https://hike.one/update/why-use-micro-animations-in-your-design'
+  - desc: >-
+      These prime examples use Canvas, SVG, CSS3, WebGL and more to enhance
+      visual content.
+    name: UI Animation on Awwwards
+    type: resources
+    url: 'https://www.awwwards.com/awwwards/collections/animation/'
+  - desc: What are Micro-Interactions and Why Should We Care About Them?
+    name: Bringing Delightful Micro-Interaction and UI Animation to Life
+    type: content
+    url: >-
+      https://medium.com/capital-one-developers/bringing-delightful-micro-interaction-and-ui-animation-to-life-through-developer-designer-3c409bc326f
+  - desc: Practical suggestions to improve your UI micro-interactions.
+    name: Good to great UI animation tips
+    type: content
+    url: 'https://uxdesign.cc/good-to-great-ui-animation-tips-7850805c12e5'
+  - desc: 20 Really Useful UI Animation Tutorials Every Designer Should Know
+    name: 20 UI Animation Tutorials
+    type: resources
+    url: >-
+      https://medium.muz.li/20-really-useful-ui-animation-tutorials-every-designer-should-know-c302085245d6
 ---
 
