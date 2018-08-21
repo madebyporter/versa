@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: VR Design
-date: '2018-08-01T15:09:36-07:00'
+date: '2018-08-01'
 category: Design
 tags: 'XR Design, VR Design'
 abstract: Explore the world of designing 2D & 3D elements for Virtual Reality.
@@ -34,4 +34,3 @@ links:
     type: reference
     url: 'https://virtualrealitypop.com/vr-glossary-81f1d8b5dccc'
 ---
-

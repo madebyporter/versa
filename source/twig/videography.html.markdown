@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: Videography
-date: '2018-08-01T15:16:28-07:00'
+date: '2018-08-01'
 category: Photo x Video
 tags: Videography
 abstract: 'The art and process of shooting video for film, tv, commercial and the web.'
@@ -37,7 +37,7 @@ links:
     url: 'http://schoolvideonews.com/Videography/8-Tips-for-Beginners'
   - desc: >-
       Videomaker helps you make better video by providing expert educational
-      articles and training videos. 
+      articles and training videos.
     name: Videomaker
     type: content
     url: 'https://www.videomaker.com/'
@@ -50,4 +50,3 @@ links:
     type: content
     url: 'https://youtu.be/z4yjMRK8t9Q'
 ---
-

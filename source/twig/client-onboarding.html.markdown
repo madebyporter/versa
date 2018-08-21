@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: Client Onboarding
-date: '2018-08-09T17:52:00-07:00'
+date: '2018-08-09'
 category: Business
 tags: Clients
 abstract: Learn from firms and freelancers on how they have onboard their clients.
@@ -18,7 +18,7 @@ links:
     url: 'https://jenniferbourn.com/what-is-client-onboarding/'
   - desc: >-
       So today I’m inviting you inside of my client onboarding process that’s
-      been tweaked over these last three years. 
+      been tweaked over these last three years.
     name: An Inside Look at My Client Onboarding Process
     type: content
     url: 'http://www.elleandcompanydesign.com/blog/onboarding'
@@ -29,7 +29,7 @@ links:
   - desc: >-
       You need to think strategically about the things you can do in the client
       onboarding phase of your relationship to; promptly reinforce the purchase
-      decision, and; lay the groundwork for long-term retention. 
+      decision, and; lay the groundwork for long-term retention.
     name: A Guide to Client Onboarding for Content Marketing Agencies
     type: content
     url: 'https://flypchart.co/agency-client-onboarding/'
@@ -58,9 +58,8 @@ links:
       can implement right away.
     name: >-
       15-Step Client Onboarding Checklist: Onboarding Process for Financial
-      Services 
+      Services
     type: content
     url: >-
       https://www.theadvisorcoach.com/15-step-client-onboarding-checklist-onboarding-process-for-financial-services.html
 ---
-

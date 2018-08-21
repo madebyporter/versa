@@ -1,6 +1,6 @@
 ---
 title: Design Systems
-date: 2018-07-31 00:40 UTC
+date: '2018-07-31'
 category: Design
 tags: UX Design, Interaction Design, Web Design, UI Design
 abstract: A framework of design components used for websites and applications.

@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: Case Studies
-date: '2018-08-13T14:43:55-07:00'
+date: '2018-08-13'
 category: Design
 tags: >-
   UX Design, Web Design, Product Design, AR Design, XR Design,  Interaction
@@ -87,4 +87,3 @@ links:
     url: >-
       https://uxplanet.org/4-tips-for-structuring-case-studies-in-your-design-portfolio-f7436fd460ec
 ---
-

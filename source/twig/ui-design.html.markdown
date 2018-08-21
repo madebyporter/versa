@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: UI Design
-date: '2018-08-01T15:31:55-07:00'
+date: '2018-08-01'
 category: Design
 tags: 'UI Design, Product Design, UX Design, Web Design'
 abstract: >-
@@ -50,7 +50,7 @@ links:
   - desc: >-
       Dribbble is where designers gain inspiration, feedback, community, and
       jobs and is your best resource to discover and connect with designers
-      worldwide. 
+      worldwide.
     name: Dribbble
     type: resources
     url: 'http://www.dribbble.com/'
@@ -91,4 +91,3 @@ links:
     type: content
     url: 'http://bokardo.com/principles-of-user-interface-design/'
 ---
-

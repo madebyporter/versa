@@ -287,8 +287,10 @@ body {
   min-height: 100px;
 }
 .card-title {
-  min-height: 60px;
   text-transform: none;
+  @media (min-width: $mq-small) {
+    min-height: 60px;
+  }
 }
 .card-type {
   color: $color-grey-4;
@@ -408,9 +410,14 @@ body {
     }
   }
   .card-title {
-    @include font-size(81);
+    white-space: no-wrap;
     margin: 0 0 $space-4;
-    word-wrap: break-word;
+    @include font-size(48);
+    @media (min-width: $mq-small) {
+      @include font-size(81);
+      margin: 0 0 $space-4;
+      word-wrap: break-word;
+    }
   }
   .card-cta, .card-desc {
     @include font-size(36);
@@ -423,8 +430,11 @@ body {
     }
   }
   .card-title {
-    @include font-size(48);
+    @include font-size(32);
     margin: 0 0 $space-3;
+    @media (min-width: $mq-small) {
+      @include font-size(48);
+    }
   }
   .card-cta, .card-desc {
     @include font-size(24);

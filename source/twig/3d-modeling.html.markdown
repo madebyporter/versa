@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: 3D Modeling
-date: '2018-07-30T23:43:22-07:00'
+date: '2018-07-30'
 category: Design
 tags: 'XR Design, VR Design, AR Design, Game Design, Graphic Design'
 abstract: >-
@@ -80,4 +80,3 @@ links:
     type: tools
     url: 'https://aframe.io/'
 ---
-

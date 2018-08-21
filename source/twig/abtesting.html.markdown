@@ -1,6 +1,6 @@
 ---
 title: A/B Testing
-date: 2018-06-25 09:08 UTC
+date: '2018-06-25'
 category: Design
 tags: UX Design, Interaction Design, Web Design, UI Design
 abstract: A randomized experiment with two variants, A and B. Used to test features and interfaces on websites and applications.

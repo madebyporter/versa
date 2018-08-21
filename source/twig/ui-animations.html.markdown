@@ -1,12 +1,12 @@
 ---
 layout: twigs_layout
-title: UI Animations
-date: '2018-08-16T15:23:27-07:00'
+title: UI Motion
+date: '2018-08-16'
 category: Design
 tags: 'Interaction Design, UX Design, UI Design, Product Design, Web Design'
 abstract: >-
   When you need to help guide users from one step to another, UI Animations can
-  be used to help facilitate that. 
+  be used to help facilitate that.
 links:
   - desc: >-
       Micro-interactions are events which have one main task — a single
@@ -23,7 +23,7 @@ links:
     url: 'https://producttribe.com/ux-design/ux-microinteractions'
   - desc: >-
       Microinteractions play a large role in our digital lives, even if we don’t
-      always notice them. 
+      always notice them.
     name: 'How Micro-Interactions Improve Your UX Design '
     type: content
     url: 'https://www.invisionapp.com/blog/use-microinteractions-improve-ux-design/'
@@ -49,7 +49,7 @@ links:
     url: 'https://uimovement.com/'
   - desc: >-
       Check out Ui Animation Designs on Dribbble, your best resource to discover
-      and connect with designers worldwide. 
+      and connect with designers worldwide.
     name: UI Animations on Dribbble
     type: content
     url: 'https://dribbble.com/tags/ui_animation'
@@ -95,4 +95,3 @@ links:
     url: >-
       https://medium.muz.li/20-really-useful-ui-animation-tutorials-every-designer-should-know-c302085245d6
 ---
-

@@ -1,16 +1,16 @@
 ---
 layout: twigs_layout
-title: Digital Product Design
-date: '2018-08-09T18:46:13-07:00'
+title: Product Design
+date: '2018-08-09'
 category: Design
 tags: Product Design
 abstract: >-
   Digital product design is an iterative design process to solve a functional
-  problem with a formal solution. 
+  problem with a formal solution.
 links:
   - desc: >-
       Digital product design is an iterative design process to solve a
-      functional problem with a formal solution. 
+      functional problem with a formal solution.
     name: Digital product design from Wikipedia
     type: reference
     url: 'https://en.wikipedia.org/wiki/Digital_product_design'
@@ -87,4 +87,3 @@ links:
     type: tools
     url: 'https://www.figma.com/'
 ---
-
