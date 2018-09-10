@@ -73,5 +73,11 @@ links:
     name: Font Generator
     type: tool
     url: 'http://brandmark.io/font-generator/'
+  - desc: >-
+      Pair & Compare is a web application that lets you find the best fonts and
+      font-pairings for your next project easily and smoothly. 
+    name: Pair & Compare
+    type: tools
+    url: 'https://www.pairandcompare.net/?ref=thinkversa'
 ---
 
