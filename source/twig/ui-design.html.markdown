@@ -90,4 +90,13 @@ links:
     name: Principles of User Interface Design
     type: content
     url: 'http://bokardo.com/principles-of-user-interface-design/'
+  - desc: >-
+      Lapa Ninja is created to help designers find inspiration, learn and
+      improve design skills. The contents are selected from the best designs,
+      and daily updated. We are featured on Product Hunt and have more than 1300
+      votes.
+    name: Lapa Ninja
+    type: content
+    url: 'https://www.lapa.ninja/'
 ---
+
