@@ -12,15 +12,16 @@ per_page: 12
         h1.hero-header = category
       .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-3
         = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
-.content.content-card-medium.block
+.content.content-card-medium.content-card-number-hide.block
   ol.cards.row
     - page_articles.each_with_index do |article, tag, i|
       li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-6
         .card.card-feature
+          p.card-date = article.date.strftime('%m/%d')
           h2.card-title = article.title
           p.card-desc = article.data.abstract
           = link_to "Learn", article.url, :class => "btn btn-default card-cta"
-          
+
           / .tags.card-tags
           /   - articles.sort_by(&:title).each do |article|
           /     = link_to article.title, article.url, :class => "tag"

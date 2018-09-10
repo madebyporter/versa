@@ -15,12 +15,13 @@ title: Latest Twigs
         /       | #{tag}
       .col-12.col-sm-6.col-md-4.col-lg-4.offset-lg-2.col-xl-3.offset-xl-3
         = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
-.content.content-card-medium.block
+.content.content-card-medium.content-card-number-hide.block
   ol.cards.row
     - page_articles.each_with_index do |article, i|
       / li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-3
       li.col-12.col-sm-12.col-md-6.col-lg-4
         .card.card-twig
+          p.card-date = article.date.strftime('%m/%d')
           h2.card-title = article.data.title
           p.card-desc = article.data.abstract
           / .tags.card-tags

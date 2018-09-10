@@ -10,6 +10,7 @@ js.main = {
     this.linksExternal();
     this.newTopic();
     this.tagTitle();
+    this.mixpanel();
     // this.fbPixel();
     // this.waypointsTwigs();
   },
@@ -47,6 +48,11 @@ js.main = {
     });
     $('.newWindow').click(function(){
       window.open($(this).attr('href')); return false;
+    });
+  },
+  mixpanel: function () {
+    mixpanel.track_links(".card-cta", "click card cta", {
+        "referrer": document.referrer
     });
   },
   newTopic: function () {
