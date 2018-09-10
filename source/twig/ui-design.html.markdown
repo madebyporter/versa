@@ -1,7 +1,7 @@
 ---
 layout: twigs_layout
 title: UI Design
-date: '2018-08-01'
+date: '2018-09-10T00:00:00-07:00'
 category: Design
 tags: 'UI Design, Product Design, UX Design, Web Design'
 abstract: >-
