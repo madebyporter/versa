@@ -1,6 +1,6 @@
 ---
 title: Typography
-date: '2018-09-10T00:00:00-07:00'
+date: '2018-06-25 09:08 UTC'
 category: Design
 tags: 'Graphic Design, Product Design, Web Design'
 abstract: >-
@@ -71,7 +71,7 @@ links:
       The Brandmark font generator creates unique font pairings from Google
       fonts.
     name: Font Generator
-    type: tools
+    type: tool
     url: 'http://brandmark.io/font-generator/'
   - desc: >-
       Pair & Compare is a web application that lets you find the best fonts and
