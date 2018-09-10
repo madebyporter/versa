@@ -8,6 +8,12 @@ abstract: >-
   legible, readable, and appealing when displayed.
 links:
   - desc: >-
+      Pair & Compare is a web application that lets you find the best fonts and
+      font-pairings for your next project easily and smoothly. 
+    name: Pair & Compare
+    type: tools
+    url: 'https://www.pairandcompare.net/?ref=thinkversa'
+  - desc: >-
       Typography is the art and technique of arranging type to make written
       language legible, readable, and appealing when displayed.
     name: Typography - Wikipedia
@@ -71,7 +77,7 @@ links:
       The Brandmark font generator creates unique font pairings from Google
       fonts.
     name: Font Generator
-    type: tool
+    type: tools
     url: 'http://brandmark.io/font-generator/'
 ---
 
