@@ -13,8 +13,8 @@ title: Versa - Learning Semantically
   .row
     .col-12
       ol.cards.row
-        - page_articles[0...3].each_with_index do |article, i|
-          li.col-12.col-sm-12.col-lg-4
+        - page_articles[0...4].each_with_index do |article, i|
+          li.col-12.col-sm-12.col-lg-6
             .card.card-twig
               p.card-date = article.date.strftime('%m/%d')
               h3.card-title = article.data.title

@@ -238,6 +238,9 @@ body {
     }
     @media (min-width: $mq-large) {
       margin-bottom: $space-3;
+      &:last-child {
+        margin-bottom: $space-3;
+      }
     }
   }
 }
