@@ -1,6 +1,6 @@
 ---
 layout: twigs_layout
-title: Jamstack
+title: JAMstack
 date: '2018-09-13T19:20:18-07:00'
 category: Engineering
 tags: Web Development
@@ -54,5 +54,25 @@ links:
     name: 'Go Static: 5 Reasons...'
     type: content
     url: 'https://builtvisible.com/go-static-try-jamstack/'
+  - desc: >-
+      If you want to load up new pages without refresh and make your site look
+      like a single page app, here's an article about that.
+    name: Isomorphic Rendering on the JAMstack
+    type: content
+    url: 'https://www.hawksworx.com/blog/isomorphic-rendering-on-the-jam-stack/'
+  - desc: >-
+      Smashing Magazine knew what was up in 2015! Here's their take on Static
+      Site Generators and JAMstack.
+    name: Why Static Site Gens are the Next Big Thing
+    type: content
+    url: >-
+      https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/
+  - desc: >-
+      Here's your solution for adding comments to your JAMstack site. Since
+      static sites don't refresh with new data without a Git Push, here's the
+      temporary solution.
+    name: Disqus
+    type: tools
+    url: 'https://disqus.com/'
 ---
 
