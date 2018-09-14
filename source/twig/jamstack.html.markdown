@@ -36,30 +36,29 @@ links:
     type: resources
     url: 'https://www.staticgen.com/'
   - desc: >-
-      With Jamstack comes to management of content. You can't use Wordpress with
-      this, which is good. Headless CMS means the CMS database is separate from
-      the app.
+      Here's an in-depth look into how Headless CMS' work. Make sure you read
+      this before installing that CMS!
+    name: What is a Headless CMS
+    type: content
+    url: 'https://css-tricks.com/what-is-a-headless-cms/'
+  - desc: >-
+      Now you need a place to organize your content but you can't use Wordpress.
+      Here's where headless CMS come into play!
     name: Headless CMS
     type: resources
     url: 'https://headlesscms.org/'
   - desc: >-
-      If you're in San Fran from October 29-30th, be sure to check out this
-      conference to learn more about future of deploying fast websites.
-    name: JAMstack_conf
-    type: resources
-    url: 'https://jamstackconf.com/'
+      You'll probably need this Markdown cheatsheet if you just started learning
+      Markdown like yesterday.
+    name: Markdown Cheatsheet
+    type: reference
+    url: 'https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'
   - desc: >-
       Looking to get your client or boss to let you build your next site using a
       JAMstack system? Send them this article with some valid points.
     name: 'Go Static: 5 Reasons...'
     type: content
     url: 'https://builtvisible.com/go-static-try-jamstack/'
-  - desc: >-
-      If you want to load up new pages without refresh and make your site look
-      like a single page app, here's an article about that.
-    name: Isomorphic Rendering on the JAMstack
-    type: content
-    url: 'https://www.hawksworx.com/blog/isomorphic-rendering-on-the-jam-stack/'
   - desc: >-
       Smashing Magazine knew what was up in 2015! Here's their take on Static
       Site Generators and JAMstack.
@@ -92,5 +91,30 @@ links:
     name: Prose.io
     type: tools
     url: 'https://prose.io/'
+  - desc: >-
+      If you're in San Fran from October 29-30th, be sure to check out this
+      conference to learn more about future of deploying fast websites.
+    name: JAMstack_conf
+    type: resources
+    url: 'https://jamstackconf.com/'
+  - desc: >-
+      If you want to load up new pages without refresh and make your site look
+      like a single page app, here's an article about that.
+    name: Isomorphic Rendering on the JAMstack
+    type: content
+    url: 'https://www.hawksworx.com/blog/isomorphic-rendering-on-the-jam-stack/'
+  - desc: >-
+      Smashing Magazine offers their lessons from building their site using a
+      JAMstack static site generator.
+    name: Using a Static Site Gen at Scale
+    type: content
+    url: >-
+      https://www.smashingmagazine.com/2016/08/using-a-static-site-generator-at-scale-lessons-learned/
+  - desc: >-
+      Here's an e-commerce solution that works well for JAMstack sites. Easy to
+      setup for simple stores.
+    name: Snipcart
+    type: tools
+    url: 'https://snipcart.com/'
 ---
 
