@@ -74,5 +74,23 @@ links:
     name: Disqus
     type: tools
     url: 'https://disqus.com/'
+  - desc: >-
+      If you're also looking to add a form, you'll also need a third party API
+      for that. Formkeep can hook you up with form hosting.
+    name: FormKeep
+    type: tools
+    url: 'https://formkeep.com/'
+  - desc: >-
+      Along with launching your site, you'll need HTTPS for your domain. Here's
+      a free solution for getting that setup.
+    name: Let's Encrypt
+    type: tools
+    url: 'https://letsencrypt.org/'
+  - desc: >-
+      If you want a quick way to edit your markdown hosted on Github, you can
+      use this tool to edit with ease.
+    name: Prose.io
+    type: tools
+    url: 'https://prose.io/'
 ---
 
