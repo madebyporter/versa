@@ -5,16 +5,8 @@ date: '2018-09-13T19:20:18-07:00'
 category: Engineering
 tags: Web Development
 abstract: >-
-  This past year, I've been learning JamStack. It's basically a secure,
-  efficient way to launch a static website. 
-
-
-  The stack consists of Javascript, API and Markup. Go learn those three things,
-  then come back and learn some Jamstack!
-
-
-  By the way, this site was built using a Jamstack of Middleman, Javascript,
-  APIs and Markup!
+  JAMstack is a new way of building and publishing websites using Javascript,
+  APIs and Markup.
 links:
   - desc: >-
       To start this off, take a gander at Solution Stacks. Its a set of software
