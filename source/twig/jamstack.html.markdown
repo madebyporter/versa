@@ -30,11 +30,29 @@ links:
     type: reference
     url: 'https://jamstack.org/'
   - desc: >-
+      If you're looking for some options when it comes to developing a static
+      JAMstack site, look no further. Here's a list of Static Site Generators.
+    name: StaticGen
+    type: resources
+    url: 'https://www.staticgen.com/'
+  - desc: >-
       With Jamstack comes to management of content. You can't use Wordpress with
       this, which is good. Headless CMS means the CMS database is separate from
       the app.
     name: Headless CMS
     type: resources
     url: 'https://headlesscms.org/'
+  - desc: >-
+      If you're in San Fran from October 29-30th, be sure to check out this
+      conference to learn more about future of deploying fast websites.
+    name: JAMstack_conf
+    type: resources
+    url: 'https://jamstackconf.com/'
+  - desc: >-
+      Looking to get your client or boss to let you build your next site using a
+      JAMstack system? Send them this article with some valid points.
+    name: 'Go Static: 5 Reasons...'
+    type: content
+    url: 'https://builtvisible.com/go-static-try-jamstack/'
 ---
 
