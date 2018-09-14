@@ -6,7 +6,7 @@ title: Versa - Learning Semantically
     .row.align-items-end
       .col-12
         h1
-          | Versa.
+          | Versa.&nbsp;
           span.grey
             | For creatives &amp; builders who learn on their own.
 .content.content-card-medium.content-card-number-hide.block
@@ -14,10 +14,10 @@ title: Versa - Learning Semantically
     .col-12
       ol.cards.row
         - page_articles[0...3].each_with_index do |article, i|
-          li.col-12.col-sm-12.col-md-6.col-lg-4
+          li.col-12.col-sm-12.col-lg-4
             .card.card-twig
               p.card-date = article.date.strftime('%m/%d')
-              h2.card-title = article.data.title
+              h3.card-title = article.data.title
               p.card-desc = article.data.abstract
               / .tags.card-tags
               /   - article.tags.each do |tag|

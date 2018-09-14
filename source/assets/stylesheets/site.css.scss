@@ -197,7 +197,6 @@ body {
 
 .hero {
   padding: $space-3 0 $space-2;
-  text-align: center;
   @media (min-width: $mq-small) {
     text-align: left;
   }
@@ -234,6 +233,12 @@ body {
   & > li {
     counter-increment: item;
     margin-bottom: $space-3;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (min-width: $mq-large) {
+      margin-bottom: $space-3;
+    }
   }
 }
 
