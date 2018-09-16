@@ -149,5 +149,12 @@ links:
     name: The New Dynamic
     type: content
     url: 'https://www.thenewdynamic.org/'
+  - desc: >-
+      A curated list of services you can use for your JAMstack such as Email,
+      Search, Chat, etc.
+    name: The Ultimate List of Services
+    type: content
+    url: >-
+      https://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html
 ---
 
