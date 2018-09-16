@@ -145,5 +145,9 @@ links:
     name: JAMstack_conf
     type: resources
     url: 'https://jamstackconf.com/'
+  - desc: Build Faster Better Websites with modern JAMstack tools and techniques
+    name: The New Dynamic
+    type: content
+    url: 'https://www.thenewdynamic.org/'
 ---
 
