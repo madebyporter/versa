@@ -162,5 +162,11 @@ links:
     name: Takeshape
     type: tools
     url: 'https://www.takeshape.io/'
+  - desc: >-
+      We spent 2 days at JAMstack Conf 2018 in San Francisco. Here's my (Mark
+      Catalano) debrief of the event.
+    name: Two Days at Jamstack Conf '18
+    type: reference
+    url: 'https://www.takeshape.io/articles/two-days-at-jamstack-conf-2018/'
 ---
 
