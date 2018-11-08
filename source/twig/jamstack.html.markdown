@@ -156,5 +156,17 @@ links:
     type: content
     url: >-
       https://cloudcannon.com/tips/2014/12/12/the-ultimate-list-of-services-for-static-websites.html
+  - desc: >-
+      A stress-free Headless CMS, GraphQL API, and Static Site Generator to help
+      you get your projects done.
+    name: Takeshape
+    type: tools
+    url: 'https://www.takeshape.io/'
+  - desc: >-
+      We spent 2 days at JAMstack Conf 2018 in San Francisco. Here's my (Mark
+      Catalano) debrief of the event.
+    name: Two Days at Jamstack Conf '18
+    type: reference
+    url: 'https://www.takeshape.io/articles/two-days-at-jamstack-conf-2018/'
 ---
 
