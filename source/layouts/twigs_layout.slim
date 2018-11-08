@@ -12,7 +12,7 @@
           = link_to "Suggest a Link", "/suggest-link", :class => "btn btn-black"
   .content.block
     ol.cards.row
-      - current_article.data.links.each do |link|
+      - current_article.data.links.reverse.each do |link|
         li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-3
           .card.card-twig
             h2.card-title = link.name
