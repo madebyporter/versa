@@ -168,5 +168,10 @@ links:
     name: Two Days at Jamstack Conf '18
     type: reference
     url: 'https://www.takeshape.io/articles/two-days-at-jamstack-conf-2018/'
+  - desc: How To Build A Design Portfolio With TakeShape
+    name: Build a Portfolio Site with Jamstack
+    type: content
+    url: >-
+      https://www.takeshape.io/articles/how-to-build-a-design-portfolio-with-takeshape/
 ---
 
