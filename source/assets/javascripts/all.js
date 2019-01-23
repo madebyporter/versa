@@ -26,29 +26,15 @@ js.main = {
     });
   },
   linksExternal: function () {
-    $.expr[':'].external = function (a) {
-        var PATTERN_FOR_EXTERNAL_URLS = /^(\w+:)?\/\//;
-        var href = $(a).attr('href');
-        return href !== undefined && href.search(PATTERN_FOR_EXTERNAL_URLS) !== -1;
-    };
-
-    $.expr[':'].internal = function (a) {
-        return $(a).attr('href') !== undefined && !$.expr[':'].external(a);
-    };
-
-    $('a:external').each(function() {
-       var a = new RegExp('/' + window.location.host + '/');
-       if(!a.test(this.href)) {
-           $(this).click(function(event) {
-               event.preventDefault();
-               event.stopPropagation();
-               window.open(this.href, '_blank');
-           });
-       }
-    });
-    $('.newWindow').click(function(){
-      window.open($(this).attr('href')); return false;
-    });
+    function externalLinks() {
+      var anchors = document.querySelectorAll( 'a' );
+      for( var i = 0; i < anchors.length; i++ ) {
+        if ( anchors[i].hostname !== window.location.hostname ) {
+            anchors[i].setAttribute( 'target', '_blank' );
+        }
+      }
+    }
+    externalLinks();
   },
   mixpanel: function () {
     mixpanel.track_links(".card-cta", "click card cta", {
