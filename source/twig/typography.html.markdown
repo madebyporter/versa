@@ -5,7 +5,7 @@ category: Design
 tags: 'Graphic Design, Product Design, Web Design'
 abstract: >-
   Typography is the art and technique of arranging type to make written language
-  legible, readable, and appealing when displayed.
+  legible, readable, and appealing when displayed. (From Wikipedia)
 links:
   - desc: >-
       Typography is the art and technique of arranging type to make written
@@ -79,5 +79,14 @@ links:
     name: Pair & Compare
     type: tools
     url: 'https://www.pairandcompare.net/?ref=thinkversa'
+  - desc: >-
+      Here's 70 free commercial use fonts you can use on anything, from websites
+      to print material.
+
+
+      From Emma Carey
+    name: 70 Free Commercial Use Fonts
+    type: resources
+    url: 'https://www.websiteplanet.com/blog/best-free-fonts/'
 ---
 
