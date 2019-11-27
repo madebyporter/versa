@@ -79,5 +79,14 @@ links:
     name: Pair & Compare
     type: tools
     url: 'https://www.pairandcompare.net/?ref=thinkversa'
+  - desc: >-
+      Here's 70 free commercial use fonts you can use on anything, from websites
+      to print material.
+
+
+      From Emma Carey
+    name: 70 Free Commercial Use Fonts
+    type: resources
+    url: 'https://www.websiteplanet.com/blog/best-free-fonts/'
 ---
 
