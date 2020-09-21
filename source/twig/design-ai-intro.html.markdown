@@ -84,5 +84,20 @@ links:
     name: Algorithm Design
     type: content
     url: 'https://algorithms.design/'
+  - desc: >-
+      Learn about how Brain-Computer Interfaces and Neuralink will change the
+      way we live in the future.
+    name: Neuralink and the Brain’s Magical Future
+    type: content
+    url: 'https://waitbutwhy.com/2017/04/neuralink.html'
+  - desc: >-
+      Learn about how the mind could connect directly with artificial
+      intelligence.
+    name: >-
+      A Beginner’s Guide to Brain-Computer Interface and Convolutional Neural
+      Networks
+    type: content
+    url: >-
+      https://towardsdatascience.com/a-beginners-guide-to-brain-computer-interface-and-convolutional-neural-networks-9f35bd4af948
 ---
 
