@@ -64,12 +64,40 @@ links:
     name: Google's AI Experiments
     type: reference
     url: 'https://experiments.withgoogle.com/collection/ai'
-  - desc: >+
-      OpenAI's first-of-its-kind API can be applied to any language task, and
-      currently serves millions of production requests each day.
-
+  - desc: >
+      OpenAI is an artificial intelligence research laboratory founded in San
+      Francisco in 2015 with the stated goal of making friendly AI.
     name: OpenAI
     type: tools
     url: 'https://openai.com/'
+  - desc: >-
+      is a UK based artificial intelligence company and research laboratory
+      founded in September 2010, and acquired by Google in 2014. - <a
+      href="https://en.wikipedia.org/wiki/DeepMind">Wikipedia</a>
+    name: DeepMind
+    type: reference
+    url: 'https://www.deepmind.com/'
+  - desc: >+
+      Algorithm Design talks about how artificial intelligence is changing
+      design.
+
+    name: Algorithm Design
+    type: content
+    url: 'https://algorithms.design/'
+  - desc: >-
+      Learn about how Brain-Computer Interfaces and Neuralink will change the
+      way we live in the future.
+    name: Neuralink and the Brain’s Magical Future
+    type: content
+    url: 'https://waitbutwhy.com/2017/04/neuralink.html'
+  - desc: >-
+      Learn about how the mind could connect directly with artificial
+      intelligence.
+    name: >-
+      A Beginner’s Guide to Brain-Computer Interface and Convolutional Neural
+      Networks
+    type: content
+    url: >-
+      https://towardsdatascience.com/a-beginners-guide-to-brain-computer-interface-and-convolutional-neural-networks-9f35bd4af948
 ---
 
