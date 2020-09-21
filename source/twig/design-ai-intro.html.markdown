@@ -64,10 +64,9 @@ links:
     name: Google's AI Experiments
     type: reference
     url: 'https://experiments.withgoogle.com/collection/ai'
-  - desc: >+
-      OpenAI's first-of-its-kind API can be applied to any language task, and
-      currently serves millions of production requests each day.
-
+  - desc: >
+      OpenAI is an artificial intelligence research laboratory founded in San
+      Francisco in 2015 with the stated goal of making friendly AI.
     name: OpenAI
     type: tools
     url: 'https://openai.com/'
