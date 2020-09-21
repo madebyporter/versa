@@ -77,5 +77,12 @@ links:
     name: DeepMind
     type: reference
     url: 'https://www.deepmind.com/'
+  - desc: >+
+      Algorithm Design talks about how artificial intelligence is changing
+      design.
+
+    name: Algorithm Design
+    type: content
+    url: 'https://algorithms.design/'
 ---
 
