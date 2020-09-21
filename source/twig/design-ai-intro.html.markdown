@@ -71,5 +71,12 @@ links:
     name: OpenAI
     type: tools
     url: 'https://openai.com/'
+  - desc: >-
+      is a UK based artificial intelligence company and research laboratory
+      founded in September 2010, and acquired by Google in 2014. - <a
+      href="https://en.wikipedia.org/wiki/DeepMind">Wikipedia</a>
+    name: DeepMind
+    type: reference
+    url: 'https://www.deepmind.com/'
 ---
 
