@@ -53,5 +53,27 @@ links:
     name: IBM Watson products and solutions
     type: resources
     url: 'https://www.ibm.com/watson/products-services'
+  - desc: Learn about Microsoft's principles for artificial intelligence.
+    name: Microsoft AI principles
+    type: content
+    url: 'https://www.microsoft.com/en-us/ai/responsible-ai'
+  - desc: Learn about Google's principles for artificial intelligence.
+    name: Google's AI Principles
+    type: content
+    url: 'https://www.blog.google/technology/ai/ai-principles/'
+  - desc: >
+      AI Experiments is a showcase for simple experiments that make it easier
+      for anyone to start exploring machine learning, through pictures,
+      drawings, language, music, and more.
+    name: Google's AI Experiments
+    type: reference
+    url: 'https://experiments.withgoogle.com/collection/ai'
+  - desc: >+
+      OpenAI's first-of-its-kind API can be applied to any language task, and
+      currently serves millions of production requests each day.
+
+    name: OpenAI
+    type: tools
+    url: 'https://openai.com/'
 ---
 
