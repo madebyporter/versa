@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: JAMstack
 date: '2018-09-13T19:20:18-07:00'
 category: Engineering

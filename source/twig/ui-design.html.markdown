@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: UI Design
 date: '2018-09-10T00:00:00-07:00'
 category: Design

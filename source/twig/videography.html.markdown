@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: Videography
 date: '2018-08-01'
 category: Photo x Video

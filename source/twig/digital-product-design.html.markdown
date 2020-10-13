@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: Product Design
 date: '2018-08-09'
 category: Design

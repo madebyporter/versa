@@ -1,12 +1,11 @@
 ---
-layout: twigs_layout
-title: Design & AI Intro
+layout: twig_layout
+title: Design & AI
 date: '2020-09-14T11:43:39-07:00'
 category: Design
-tags: Artificial Intelligence
+tags: Artificial Intelligence, Interaction Design, UI Design, Product Design, UX Design, VR Design, Web Design, XR Design, Graphic Design
 abstract: >-
   Artificial intelligence is the future and will heavily affect design. 
-
 
   Here are resources on artificial intelligence, how it effects design and
   possible ways to adapt.

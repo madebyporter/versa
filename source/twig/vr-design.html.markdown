@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: VR Design
 date: '2018-08-01'
 category: Design

@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: Case Studies
 date: '2018-08-13'
 category: Design

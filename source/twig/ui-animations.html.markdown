@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: UI Motion
 date: '2018-08-16'
 category: Design

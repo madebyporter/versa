@@ -1,5 +1,5 @@
 ---
-layout: twigs_layout
+layout: twig_layout
 title: 3D Modeling
 date: '2018-07-30'
 category: Design

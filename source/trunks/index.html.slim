@@ -14,10 +14,7 @@ title: Latest Trunks
 .content.block.content-card-large
   ol.cards.row
       - blog.articles.group_by {|a| a.data.category}.each do |category, articles|
-        li.col-12.col-sm-12.col-md-12.col-lg-12
-          .card.card-twig
+        li.col-12.col-sm-12.col-md-12.col-lg-6
+          .card.card-trunk
             h2.card-title = category
-            / .tags.card-tags
-            /   - articles.sort_by(&:title).each do |article|
-            /     = link_to article.title, article.url, :class => "tag"
             = link_to "Learn", category_path(category), :class => "btn btn-default card-cta"
