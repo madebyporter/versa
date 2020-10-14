@@ -16,5 +16,6 @@ title: Latest Trunks
       - blog.articles.group_by {|a| a.data.category}.each do |category, articles|
         li.col-12.col-sm-12.col-md-12.col-lg-6
           .card.card-trunk
-            h2.card-title = category
+            .card-content
+              h2.card-title = category
             = link_to "Learn", category_path(category), :class => "btn btn-default card-cta"

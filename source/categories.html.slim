@@ -3,7 +3,7 @@ pageable: true
 per_page: 12
 ---
 
-// Trunk Detail
+// Trunks > Trunk Detail
 
 .hero.block
   .container-fluid
@@ -17,9 +17,10 @@ per_page: 12
     - page_articles.each_with_index do |article, tag, i|
       li.col-12.col-sm-6.col-md-6.col-lg-4.col-xl-6
         .card.card-feature
-          p.card-date = article.date.strftime('%m/%d')
-          h2.card-title = article.title
-          p.card-desc = article.data.abstract
+          .card-content
+            p.card-date = article.date.strftime('%m/%d')
+            h2.card-title = article.title
+            p.card-desc = article.data.abstract
           = link_to "Learn", article.url, :class => "btn btn-default card-cta"
 
           / .tags.card-tags

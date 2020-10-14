@@ -2,6 +2,8 @@
 title: Latest Branches
 ---
 
+// Branch Index
+
 .hero.block
   .container-fluid
     .row.align-items-end
@@ -16,8 +18,9 @@ title: Latest Branches
     - blog.tags.sort.each do |tag, articles|
       li.col-12.col-sm-12.col-md-6
         .card.card-twig
-          h2.card-title = tag
-          .tags.card-tags
-            - articles[0...2].each do |article|
-              = link_to article.title, article.url, :class => "tag"
+          .card-content
+            h2.card-title = tag
+            .tags.card-tags
+              - articles[0...2].each do |article|
+                = link_to article.title, article.url, :class => "tag"
           = link_to "Learn", tag_path( tag ), :class => "btn btn-default card-cta"
