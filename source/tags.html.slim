@@ -3,6 +3,8 @@
 # pageable: true
 ---
 
+// Branch Detail
+
 .hero.block
   .container-fluid
     .row.align-items-end
@@ -16,7 +18,7 @@
       li.col-12.col-sm-6.col-md-6
         .card.card-twig
           .card-content
-            p.card-date = article.date.strftime('%m/%d')
+            p.card-date = article.date.strftime('%m/%d/%y')
             h2.card-title = article.data.title
             p.card-desc = article.data.abstract
           = link_to "Learn", article.url, :class => "btn btn-default card-cta"
